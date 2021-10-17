@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if not exist &quot;$(TargetDir)\Resources&quot; mkdir &quot;$(TargetDir)\Resources&quot;&#xD;&#xA;xcopy &quot;Resources\*.*&quot; &quot;$(TargetDir)\Resources&quot; /E /Y /C" />
+  </Target>
+
+</Project>
