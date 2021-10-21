@@ -22,9 +22,7 @@ namespace TheDarkPath
     public partial class MainWindow : Window
     {
         private Image player;
-        readonly Dictionary<string, BitmapImage> resources = new Dictionary<string, BitmapImage>();
         bool sus = false, jos = false, dreapta = false, stanga = false;
-        bool taste = false;
 
         public MainWindow()
         {
@@ -32,7 +30,7 @@ namespace TheDarkPath
 
             PreviewKeyDown += Window_PreviewKeyDown;
             PreviewKeyUp += Window_PreviewKeyUp;
-            KeyUp += Window_KeyUp;
+            KeyUp += Window_PreviewKeyUp;
             Initialize();
 
             // Create a task but do not start it.
@@ -42,43 +40,46 @@ namespace TheDarkPath
 
         void MainLoop()
         {
-            double miscare = 0.005f;
             double dt = 0f;
-            double elapsed = 60f;
+            const double ELAPSED = 60f;
             while (true)
             {
                 dt += GetDeltaTime();
 
-                if (dt >= elapsed)
+                if (dt >= ELAPSED)
                 {
-                    dt -= elapsed;
+                    dt -= ELAPSED;
 
-
-                    if (taste)
-                    {
-                        continue;
-                    }
-
-                    if (stanga)
-                    {
-                        MovePlayer(-miscare, 0);
-                    }
-                    if (sus)
-                    {
-                        MovePlayer(0, -miscare);
-                    }
-                    if (dreapta)
-                    {
-                        MovePlayer(miscare, 0);
-                    }
-                    if (jos)
-                    {
-                        MovePlayer(0, miscare);
-                    }
+                    Input();
                 }
+            }
+        }
 
+        void Input()
+        {
+            const double MISCARE = 0.005f;
+            double[] newPosition = new double[2];
+            if (stanga)
+            {
+                newPosition[0] -= MISCARE;
+            }
+            if (sus)
+            {
+                newPosition[1] -= MISCARE;
+            }
+            if (dreapta)
+            {
+                newPosition[0] += MISCARE;
+            }
+            if (jos)
+            {
+                newPosition[1] += MISCARE;
             }
 
+            if (newPosition[0] != 0 || newPosition[1] != 0)
+            {
+                MovePlayer(newPosition[0], newPosition[1]);
+            }
         }
 
         void MovePlayer(double left, double top)
@@ -99,14 +100,8 @@ namespace TheDarkPath
             return dT;
         }
 
-        void ClearKeyBoard()
-        {
-            sus = jos = dreapta = stanga = false;
-        }
-
         private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            taste = true;
             switch (e.Key)
             {
                 case Key.A:
@@ -126,19 +121,11 @@ namespace TheDarkPath
                 default:
                     break;
             }
-
-            if (e.Key == Key.Enter)
-            {
-                //Process user input
-                e.Handled = true;
-            }
             e.Handled = true;
-            taste = false;
         }
 
         private void Window_PreviewKeyUp(object sender, KeyEventArgs e)
         {
-            taste = true;
             switch (e.Key)
             {
                 case Key.A:
@@ -157,53 +144,8 @@ namespace TheDarkPath
                     break;
             }
             e.Handled = true;
-            taste = false;
         }
-
-        private void Window_KeyUp(object sender, KeyEventArgs e)
-        {
-            taste = true;
-            switch (e.Key)
-            {
-                case Key.A:
-                    stanga = false;
-                    break;
-                case Key.W:
-                    sus = false;
-                    break;
-                case Key.D:
-                    dreapta = false;
-                    break;
-                case Key.S:
-                    jos = false;
-                    break;
-                default:
-                    break;
-            }
-            e.Handled = true;
-            taste = false;
-        }
-
-
-        void LoadResources()
-        {
-            string[] fileEntries = Directory.GetFiles(System.IO.Path.Combine(Environment.CurrentDirectory, "Resources"));
-            foreach (string fileName in fileEntries)
-            {
-                AddResource(fileName);
-            }
-        }
-
-        void AddResource(string path)
-        {
-            BitmapImage bitmap = new BitmapImage();
-            bitmap.BeginInit();
-            Uri pathToFile = new Uri(path);
-            bitmap.UriSource = pathToFile;
-            string fileName = pathToFile.Segments[^1];
-            bitmap.EndInit();
-            resources.Add(fileName, bitmap);
-        }
+      
 
         void Initialize()
         {
@@ -218,36 +160,34 @@ namespace TheDarkPath
             {
                 for (int j = 0; j < m; j++)
                 {
-                    Image image = new Image
-                    {
-                        Source = resources["simple.bmp"],
-                        Width = width,
-                        Height = height,
-                        Margin = new Thickness(error * i * width, error * j * height, 0, 0),
-                        HorizontalAlignment = HorizontalAlignment.Left,
-                        VerticalAlignment = VerticalAlignment.Top
-                    };
-                    image.Stretch = Stretch.Fill;
-                    image.Visibility = Visibility.Visible;
-                    gridMainWindow.Children.Add(image);
+                    Image _ = CreateSquareImage(error * i * width, error * j * height, "simple.bmp");
                 }
             }
 
-            player = new Image
+            player = CreateSquareImage(0, 0, "p.bmp");
+        }
+
+        Image CreateSquareImage(double left, double top, string textureName)
+        {
+            const int WIDTH = 50;
+            const int HEIGHT = 50;
+
+            Image image = new Image
             {
-                Source = resources["p.bmp"],
-                Width = width,
-                Height = height,
-                Margin = new Thickness(0, 0, 0, 0),
+                Source = resources[textureName],
+                Width = WIDTH,
+                Height = HEIGHT,
+                Margin = new Thickness(left, top, 0, 0),
                 HorizontalAlignment = HorizontalAlignment.Left,
                 VerticalAlignment = VerticalAlignment.Top,
                 Stretch = Stretch.Fill,
                 Visibility = Visibility.Visible,
             };
 
-            gridMainWindow.Children.Add(player);
-        }
+            gridMainWindow.Children.Add(image);
 
+            return image;
+        }
 
     }
 }
