@@ -76,16 +76,6 @@ namespace TheDarkPath
             });
         }
 
-        static long lastTime = 0;
-        static double GetDeltaTime()
-        {
-            long now = DateTime.Now.Ticks;
-            double dT = (now - lastTime) / 1000;
-            lastTime = now;
-            Console.WriteLine(dT);
-            return dT;
-        }
-
         private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             switch (e.Key)
