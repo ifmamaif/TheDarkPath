@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -34,51 +34,37 @@ namespace TheDarkPath
             Initialize();
 
             // Create a task but do not start it.
-            Task t1 = new Task( MainLoop);
+            Task t1 = new Task(Input);
             t1.Start();
-        }
-
-        void MainLoop()
-        {
-            double dt = 0f;
-            const double ELAPSED = 60f;
-            while (true)
-            {
-                dt += GetDeltaTime();
-
-                if (dt >= ELAPSED)
-                {
-                    dt -= ELAPSED;
-
-                    Input();
-                }
-            }
         }
 
         void Input()
         {
-            const double MISCARE = 0.005f;
-            double[] newPosition = new double[2];
-            if (stanga)
+            while (true)
             {
-                newPosition[0] -= MISCARE;
-            }
-            if (sus)
-            {
-                newPosition[1] -= MISCARE;
-            }
-            if (dreapta)
-            {
-                newPosition[0] += MISCARE;
-            }
-            if (jos)
-            {
-                newPosition[1] += MISCARE;
-            }
+                const double MISCARE = 0.005f;
+                double[] newPosition = new double[2];
+                if (stanga)
+                {
+                    newPosition[0] = -MISCARE;
+                }
+                if (sus)
+                {
+                    newPosition[1] = -MISCARE;
+                }
+                if (dreapta)
+                {
+                    newPosition[0] = stanga ? 0 : MISCARE;
+                }
+                if (jos)
+                {
+                    newPosition[1] = sus ? 0 : MISCARE;
+                }
 
-            if (newPosition[0] != 0 || newPosition[1] != 0)
-            {
-                MovePlayer(newPosition[0], newPosition[1]);
+                if (newPosition[0] != 0 || newPosition[1] != 0)
+                {
+                    MovePlayer(newPosition[0], newPosition[1]);
+                }
             }
         }
 
@@ -121,6 +107,17 @@ namespace TheDarkPath
                 default:
                     break;
             }
+
+            if(dreapta && dreapta == stanga)
+            {
+                dreapta = stanga = false;
+            }
+
+            if (sus && sus == jos)
+            {
+                sus = jos = false;
+            }
+
             e.Handled = true;
         }
 
