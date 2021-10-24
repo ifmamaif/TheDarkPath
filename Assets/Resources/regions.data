@@ -1,0 +1,30 @@
+8
+Water Deep
+0.3
+3263C3
+Water Shallow
+0.4
+3667C7
+Sand
+0.45
+D2D07D
+Grass
+0.55
+569817
+Grass 2
+0.6
+3E6B12
+Rock
+0.7
+5A453C
+Rock 2
+0.9
+4B3C35
+Snow
+1
+FFFFFF
+
+
+Name
+Height , 0 <= Height <=1
+Colour Hex Color
