@@ -72,3 +72,4 @@ crashlytics-build.properties
 
 # Ignore save local files
 /Assets/Resources/Saved/
+/Assets/Resources/Saved/*
