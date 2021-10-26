@@ -1,10 +1,6 @@
-﻿using UnityEngine;	//	GameObject , Color
-using System.IO;	// files,IO;
-using System;	//BitConverter,Char.GetNumericValue,Convert.ToDouble
-//using System.Collections;
-//using System.Collections.Generic;
-
-//using System.Collections.Generic;
+﻿using UnityEngine;	//	GameObject, Color
+using System.IO;	//	files, IO;
+using System;		//	BitConverter, Char.GetNumericValue, Convert.ToDouble
 
 public class Land  {
 	
@@ -34,8 +30,6 @@ public class Land  {
 
 	private float textureSize = 1.24f;	// texturi 124 x 124
 	private Vector3 initialPosition;
-	//private int move = 0;
-	//private int speed = 10;
 
 	// Use this for initialization
 	public Land (Vector2Int screen) {
@@ -68,81 +62,7 @@ public class Land  {
 
 		f.Close();
 
-		/*
-		//Debug.Log (perlinScale / perlinWidth + " " + perlinScale / perlinHeight + " :: " + perlinOffsetX + " " + perlinOffsetY);
-
-		//float newx = ((float)((int)(perlinOffsetX / (perlinScale / perlinWidth )))) *perlinScale / perlinWidth;
-		//float newy = ((float)((int)(perlinOffsetY / (perlinScale / perlinHeight)))) *perlinScale / perlinHeight;
-		//Debug.Log (perlinScale / perlinWidth + " " + perlinScale / perlinHeight + " :: " + perlinOffsetX + " " + perlinOffsetY + " :: "+ newx+" "+newy);
-
-
-		//Debug.Log ((perlinScale / perlinWidth));
-		//Debug.Log (1.0f*(float)(perlinScale / perlinWidth));
-		//Debug.Log (perlinOffsetX);
-		//Debug.Log (perlinOffsetX/(perlinScale / perlinWidth));
-		int nr = 0;
-		float aux = perlinOffsetX;
-		float a1 = perlinScale / perlinWidth;
-		bool wasNegative = false;
-		if (aux < 0) {
-			aux *= -1; 
-			wasNegative = true;
-		}
-		while (aux > 0) {
-			aux -= a1;
-			nr++;
-		}
-		//Debug.Log (nr);
-		//Debug.Log (nr * a1 * (wasNegative==true?(-1):1));
-		//Debug.Log (perlinScale + " " + perlinWidth + " " + perlinHeight);
-		Debug.Log (nr * a1 * (wasNegative == true ? (-1) : 1));
-
-		nr=0;
-		aux = perlinOffsetY;
-		a1 = perlinScale / perlinHeight;
-		wasNegative = false;
-		if (aux < 0) {
-			aux *= -1; 
-			wasNegative = true;
-		}
-		while (aux > 0) {
-			aux -= a1;
-			nr++;
-		}
-		Debug.Log(nr * a1 * (wasNegative == true ? (-1) : 1));
-
-
-
-		aux = perlinScale / perlinWidth;
-		wasNegative = false;
-		nr=0;
-		if (perlinOffsetX < 0) {
-			perlinOffsetX *= -1; 
-			wasNegative = true;
-		}
-		while (perlinOffsetX > 0) {
-			perlinOffsetX -= aux;
-			nr++;
-		}nr--;
-		perlinOffsetX = nr * aux * (wasNegative == true ? (-1) : 1);
-
-		aux = perlinScale / perlinHeight;
-		wasNegative = false;
-		nr=0;
-		if (perlinOffsetY < 0) {
-			perlinOffsetY *= -1; 
-			wasNegative = true;
-		}
-		while (perlinOffsetY > 0) {
-			perlinOffsetY -= aux;
-			nr++;
-		}nr--;
-		perlinOffsetY = nr * aux * (wasNegative == true ? (-1) : 1);
-
-		Debug.Log(perlinOffsetX+" "+perlinOffsetY);
-		*/
-
-		boardHolder = new GameObject ("Terrain");		//Instantiate Board and set boardHolder to its transform.
+		boardHolder = new GameObject ("Terrain");					//Instantiate Board and set boardHolder to its transform.
 
 		initialPosition = boardHolder.transform.position;
 
@@ -216,9 +136,11 @@ public class Land  {
 
 	public Texture2D TextureFromcolorMap() {
 		Color[] colorMap = GeneratecolorMap ();
-		Texture2D texture = new Texture2D (perlinWidth, perlinHeight);
-		texture.filterMode = FilterMode.Point;
-		texture.wrapMode = TextureWrapMode.Clamp;
+		Texture2D texture = new Texture2D(perlinWidth, perlinHeight)
+		{
+			filterMode = FilterMode.Point,
+			wrapMode = TextureWrapMode.Clamp,
+		};
 		texture.SetPixels (colorMap);
 		texture.Apply ();
 		return texture;
@@ -253,8 +175,7 @@ public class Land  {
 	}
 
 	public static Color HexToColor(string hex){
-		Color myColor = new Color ();
-		ColorUtility.TryParseHtmlString (hex, out myColor);
+		ColorUtility.TryParseHtmlString (hex, out Color myColor);
 		return myColor;
 	}
 

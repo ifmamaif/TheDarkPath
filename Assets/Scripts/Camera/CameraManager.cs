@@ -18,15 +18,9 @@ public class CameraManager {
 
 		cam.clearFlags = CameraClearFlags.SolidColor;
 		cam.backgroundColor = Color.black;
-		//cam.cullingMask = 0; // 0 = Nothing nu e bun Nothing
 
 		cam.nearClipPlane = -0.1f;
 		cam.farClipPlane = 2;
-
-		//cam.orthographicSize = Screen.height /100;
-
-		//  height = 2*Camera.main.orthographicSize;
-		//  width = height*Camera.main.aspect;
 
 	}
 

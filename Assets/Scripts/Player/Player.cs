@@ -37,8 +37,9 @@ public class Player	{
 	}
 
 	public void Move(Vector2Int move,int speed){
-		int direction = 0;
-		if(move.x == 1)
+		int direction;		
+
+        if (move.x == 1)
 			direction = 6;
 		else if(move.x == -1)
 			direction = 4;
