@@ -73,3 +73,8 @@ crashlytics-build.properties
 # Ignore save local files
 /Assets/Resources/Saved/
 /Assets/Resources/Saved/*
+
+# Ignore specific files
+Assets/Resources/BillingMode.json
+Assets/Resources/BillingMode.json.meta
+Assets/Resources/Config/whatToPlay.cfg
