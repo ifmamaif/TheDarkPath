@@ -8,8 +8,8 @@ public class CameraManager {
 
 	public CameraManager(){
 
-		objectCamera = new GameObject ("MainCamera");
-		objectCamera.transform.position = new Vector3 (0, 0, -1);
+		objectCamera = new GameObject("MainCamera");
+		objectCamera.transform.position = new Vector3(0, 0, -1);
 		objectCamera.tag = "MainCamera";
 		objectCamera.AddComponent<Camera> ();
 

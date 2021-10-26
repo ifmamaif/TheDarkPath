@@ -118,13 +118,8 @@ public class MenuGame : MonoBehaviour {
 	}
 
 	public void SoundVolume(){
-		if (isSoundMuted == false) {
-			isSoundMuted = true;
-			soundButton.GetComponent<Image>().overrideSprite = Resources.Load<Sprite> ("Sprites/UI/1");
-		} else {
-			isSoundMuted = false;
-			soundButton.GetComponent<Image>().overrideSprite = Resources.Load<Sprite> ("Sprites/UI/0");
-		}
+		isSoundMuted = !isSoundMuted;
+		soundButton.GetComponent<Image>().overrideSprite = Resources.Load<Sprite>("Sprites/UI/" + (isSoundMuted==true?"1":"0"));
 	}
 
 	public void LoadSavedGame(){

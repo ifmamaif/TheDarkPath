@@ -28,7 +28,7 @@ public class IMFile {
 			else if (stringSource [i] == '.')
 				positionDot = i;
 		}
-		string result = new string (stringSource [positionLastSlash], 1);
+		string result = new string(stringSource [positionLastSlash], 1);
 		for(int i=positionLastSlash+1;i<positionDot;i++){
 			result += stringSource[i];
 		}

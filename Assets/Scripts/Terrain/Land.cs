@@ -24,11 +24,11 @@ public class Land  {
 	}
 	public TerrainType[] regions;
 
-	private Renderer thisrenderer;
+	private readonly Renderer thisrenderer;
 
 	public bool autoUpdate = false;
 
-	private float textureSize = 1.24f;	// texturi 124 x 124
+	private const float TEXTURE_SIZE = 1.24f;	// texturi 124 x 124
 	private Vector3 initialPosition;
 
 	// Use this for initialization
@@ -87,10 +87,10 @@ public class Land  {
 
 	public void Move(Vector2Int move,int speed){
 		if (move.x != 0) {
-			boardHolder.transform.Translate (-move.x * textureSize / speed, 0, 0);
+			boardHolder.transform.Translate (-move.x * TEXTURE_SIZE / speed, 0, 0);
 
-			if (	(int)(boardHolder.transform.position.x/ textureSize )	!=	(int)(initialPosition.x/ textureSize )	) {				
-				terrain.transform.Translate (move.x * textureSize, 0, 0);
+			if (	(int)(boardHolder.transform.position.x/ TEXTURE_SIZE )	!=	(int)(initialPosition.x/ TEXTURE_SIZE )	) {				
+				terrain.transform.Translate (move.x * TEXTURE_SIZE, 0, 0);
 				perlinOffsetX += perlinScale/perlinWidth * move.x;
 				UpdateMap ();
 				initialPosition = boardHolder.transform.position;
@@ -98,9 +98,9 @@ public class Land  {
 
 		}
 		else if (move.y != 0) {
-			boardHolder.transform.Translate (0, -move.y * textureSize / speed, 0);
-			if (	(int)(boardHolder.transform.position.y/ textureSize )	!=	(int)(initialPosition.y/ textureSize )	) {				
-				terrain.transform.Translate (0,move.y * textureSize, 0);
+			boardHolder.transform.Translate (0, -move.y * TEXTURE_SIZE / speed, 0);
+			if (	(int)(boardHolder.transform.position.y/ TEXTURE_SIZE )	!=	(int)(initialPosition.y/ TEXTURE_SIZE )	) {				
+				terrain.transform.Translate (0,move.y * TEXTURE_SIZE, 0);
 				perlinOffsetY += perlinScale/perlinHeight * move.y;
 				UpdateMap ();
 				initialPosition = boardHolder.transform.position;
@@ -128,8 +128,8 @@ public class Land  {
 
 
 	void UpdateMap(){
-		if (terrain.transform.localScale != new Vector3(perlinWidth*textureSize,perlinHeight*textureSize,1)) {
-			terrain.transform.localScale = new Vector3(perlinWidth*textureSize,perlinHeight*textureSize,1);
+		if (terrain.transform.localScale != new Vector3(perlinWidth*TEXTURE_SIZE,perlinHeight*TEXTURE_SIZE,1)) {
+			terrain.transform.localScale = new Vector3(perlinWidth*TEXTURE_SIZE,perlinHeight*TEXTURE_SIZE,1);
 		}
 		thisrenderer.material.mainTexture = TextureFromcolorMap();
 	}
