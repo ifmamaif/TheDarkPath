@@ -205,11 +205,13 @@ public class MenuSystem : MonoBehaviour
 	{
 		for (int i = 0; i < text.Length; i++)
 		{
-			if (text[i] < '0' || text[i] > '9')
-				if (text[i] < 'a' || text[i] > 'z')
-					if (text[i] < 'A' || text[i] > 'Z')
-						return false;
-		}
+			if ((text[i] < '0' || text[i] > '9') &&
+				(text[i] < 'a' || text[i] > 'z') &&
+				(text[i] < 'A' || text[i] > 'Z'))
+			{
+				return false;
+			}
+	}
 		return true;
 	}
 
@@ -256,16 +258,8 @@ public class MenuSystem : MonoBehaviour
 
 	public void SoundVolume()
 	{
-		if (isSoundMuted == false)
-		{
-			isSoundMuted = true;
-			soundButton.GetComponent<Image>().overrideSprite = Resources.Load<Sprite>("Sprites/UI/1");
-		}
-		else
-		{
-			isSoundMuted = false;
-			soundButton.GetComponent<Image>().overrideSprite = Resources.Load<Sprite>("Sprites/UI/0");
-		}
+		isSoundMuted = !isSoundMuted;
+		soundButton.GetComponent<Image>().overrideSprite = Resources.Load<Sprite>("Sprites/UI/" + (isSoundMuted == true ? "1" : "0"));
 	}
 
 
