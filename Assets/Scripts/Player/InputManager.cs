@@ -1,95 +1,56 @@
 ﻿using UnityEngine; // GameObject and Input
 
-public class InputManager {
+public class InputManager
+{
 	private short move = 0;
 
-	//private Land terrain;
-	//private Player player;
-
-	public InputManager(){
-	//public InputManager(Land terrain , Player player){
-		//this.terrain = terrain;
-		//this.player = player;
+	public InputManager()
+	{
 	}
 
 	//Input.GetKeyDown este adevarat doar cand s-a apasat butonul , nu este adevarat daca butonul este in continuare apasat !!!
 	//Input.GetKeyUp este adevarat cand butonul respectiv s-a ridicat / i s-a dat drumul , cu conditia ca un buton sa fie apasat in acel timp
 
-	public Vector2Int SetMove(){
-		if (Input.GetKeyDown (KeyCode.RightArrow)) {
-			move = 6;
-		}
-		if (Input.GetKey (KeyCode.RightArrow)) { // true daca butonul este apasat , 
-			if (move == 0)
-				move = 6;
-		} else {
-			if (move == 6)
-				move = 0;
+	private void CheckKey(KeyCode keyCode, short value)
+	{
+		if (Input.GetKeyDown(keyCode))
+		{
+			move = value;
 		}
 
-		if (Input.GetKeyDown (KeyCode.LeftArrow)) {	
-			move = 4;
-		}
-		if (Input.GetKey (KeyCode.LeftArrow)) { // true daca butonul este apasat , 
-			if (move == 0)
-				move = 4;			
-		} else {
-			if (move == 4)
-				move = 0;
-		}
+		short checkValue = value;
+		short assignValue = 0;
 
-		if (Input.GetKeyDown (KeyCode.UpArrow)) {
-			move = 8;
+		if (Input.GetKey(keyCode))
+		{
+			var temp = checkValue;
+			checkValue = assignValue;
+			assignValue = temp;
 		}
-		if (Input.GetKey (KeyCode.UpArrow)) { // true daca butonul este apasat , 
-			if (move == 0)
-				move = 8;			
-		} else {
-			if (move == 8)
-				move = 0;
-		}
-
-		if (Input.GetKeyDown (KeyCode.DownArrow)) {	
-			move = 2;
-		}
-		if (Input.GetKey (KeyCode.DownArrow)) { // true daca butonul este apasat , 
-			if (move == 0)
-				move = 2;			
-		} else {
-			if (move == 2)
-				move = 0;
-		}
-
-
-		if (move == 2) {
-			return new Vector2Int (0, -1);
-		}
-		else if (move == 4) {
-			return new Vector2Int (-1, 0);
-		}
-		else if (move == 6) {
-			return new Vector2Int (1, 0);
-		}
-		else if (move == 8) {
-			return new Vector2Int (0, 1);
-		}
-		return new Vector2Int (0, 0);
+		move = (move == checkValue ? assignValue : move);
 	}
 
-	public Vector2Int Control(){
-		/*
-		Vector2Int direction = SetMove ();
-		Debug.Log (direction);
-		if (direction.x != 0 && direction.y != 0) {			
-			terrain.Move (direction, speed);
+	public Vector2Int SetMove()
+	{
 
-		}
-		*/
-		return SetMove ();
-		//Move (new Vector2Int (0, -1), speed);
-		//player.Move (move,speed);
-		//terrain.Move (move,speed);
+		CheckKey(KeyCode.RightArrow, 6);
+		CheckKey(KeyCode.LeftArrow, 4);
+		CheckKey(KeyCode.UpArrow, 8);
+		CheckKey(KeyCode.DownArrow, 2);
 
+		return move switch
+		{
+			2 => new Vector2Int(0, -1),
+			4 => new Vector2Int(-1, 0),
+			6 => new Vector2Int(1, 0),
+			8 => new Vector2Int(0, 1),
+			_ => new Vector2Int(0, 0),
+		};
+	}
+
+	public Vector2Int Control()
+	{
+		return SetMove();
 	}
 
 }

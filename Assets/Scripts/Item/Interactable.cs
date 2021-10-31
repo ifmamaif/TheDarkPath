@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections; // collision
 
-public class Interactable : MonoBehaviour {
+public class Interactable : MonoBehaviour
+{
 	/*
 	public float radius = 3f;
 	public Transform interactionTransform;
@@ -16,8 +17,9 @@ public class Interactable : MonoBehaviour {
 	}	
 	*/
 
-	public virtual void Interact(){
-		Debug.Log ("Interacting with " + transform.name);
+	public virtual void Interact()
+	{
+		Debug.Log("Interacting with " + transform.name);
 	}
 
 	//void OnCollisionEnter2D(Collision2D coll){
@@ -25,9 +27,10 @@ public class Interactable : MonoBehaviour {
 	///	Destroy (gameObject);
 	//}
 
-	void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log ("2D :" + gameObject.name + " was trigger by " + other.gameObject.name);
-		Interact ();
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		Debug.Log("2D :" + gameObject.name + " was trigger by " + other.gameObject.name);
+		Interact();
 		//Destroy (gameObject);
 	}
 }
