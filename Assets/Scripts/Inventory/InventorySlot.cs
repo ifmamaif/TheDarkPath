@@ -1,41 +1,74 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
-public class InventorySlot : MonoBehaviour
+
+namespace TheDarkPath
 {
-	Item item;
-	public Image icon;
-	public Button removeButton;
+    public class InventorySlot : MonoBehaviour
+    {
+        public Image icon;
+        public Item item = null;
+        public Item.Type type = Item.Type.Unknown;
+        public Text uiButton = null;
 
-	public void AddItem(Item newItem)
-	{
-		item = newItem;
+        public void Start()
+        {
+            item = null;
 
-		icon.sprite = newItem.icon;
-		icon.enabled = true;
+            if (uiButton == null)
+            {
+                Debug.LogError("uiButton is null");
+            }
+        }
 
-		removeButton.interactable = true;
-	}
+        public bool AddItem(Item newItem, Transform parentTransform)
+        {
+            if (!enabled ||
+                newItem == null ||
+                (type != Item.Type.Unknown && type != newItem.type))
+            {
+                return false;
+            }
 
-	public void ClearSlot()
-	{
-		item = null;
+            if (item != null)
+            {
+                Inventory.instance.DropItem(item);
+            }
 
-		icon.sprite = null;
-		icon.enabled = false;
+            item = newItem;
 
-		removeButton.interactable = false;
-	}
+            icon.sprite = item.icon;
+            icon.enabled = true;
+            uiButton.enabled = true;
+            Debug.Log("Add item " + item.name);
+            return true;
+        }
 
-	public void OnRemoveButton()
-	{
-		Inventory.instance.Remove(item);
-	}
+        public void RemoveItem()
+        {
+            Debug.Log("Remove item " + item.name);
 
-	public void UserItem()
-	{
-		if (item != null)
-		{
-			item.Use();
-		}
-	}
+            item = null;
+            icon.sprite = null;
+            icon.enabled = false;
+            uiButton.enabled = false;
+        }
+
+        public void DropItem(Transform parent)
+        {
+            Debug.Log("Drop item " + item.name);
+
+            GameObject newGameObject = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Items/GenericItem"));
+            newGameObject.transform.position = parent.position;
+            newGameObject.name = item.name;
+
+            var pickable = newGameObject.GetComponent<Pickable>();
+            pickable.item = item;
+
+            newGameObject.GetComponent<SpriteRenderer>().sprite = item.icon;
+
+            RemoveItem();
+        }
+    }
 }
