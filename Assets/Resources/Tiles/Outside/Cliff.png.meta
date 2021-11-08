@@ -1,0 +1,4517 @@
+fileFormatVersion: 2
+guid: d8af63eeed9099e41bd31095219d030a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6689793761368241967
+    second: Cliff_0
+  - first:
+      213: -3884767449530326932
+    second: Cliff_1
+  - first:
+      213: 1925621349887103985
+    second: Cliff_2
+  - first:
+      213: -4528797139553692878
+    second: Cliff_3
+  - first:
+      213: -2573964973885784103
+    second: Cliff_4
+  - first:
+      213: -3017566192146429057
+    second: Cliff_5
+  - first:
+      213: 1758147879029252899
+    second: Cliff_6
+  - first:
+      213: -8201895087295691293
+    second: Cliff_7
+  - first:
+      213: 2445912846183386457
+    second: Cliff_8
+  - first:
+      213: -6774192656185396034
+    second: Cliff_9
+  - first:
+      213: -5499733919262182761
+    second: Cliff_10
+  - first:
+      213: -8573503562078815416
+    second: Cliff_11
+  - first:
+      213: 7683699384381005290
+    second: Cliff_12
+  - first:
+      213: 6379387610371062235
+    second: Cliff_13
+  - first:
+      213: -5540903393286071429
+    second: Cliff_14
+  - first:
+      213: -3915184159431984494
+    second: Cliff_15
+  - first:
+      213: -3625780880653540861
+    second: Cliff_16
+  - first:
+      213: -1952025497091689975
+    second: Cliff_17
+  - first:
+      213: -2063989453150144019
+    second: Cliff_18
+  - first:
+      213: 6271141464030426685
+    second: Cliff_19
+  - first:
+      213: 5630623693208749511
+    second: Cliff_20
+  - first:
+      213: 4926908972535697126
+    second: Cliff_21
+  - first:
+      213: 1060939050202912529
+    second: Cliff_22
+  - first:
+      213: -6074546077284259153
+    second: Cliff_23
+  - first:
+      213: 7035372044368010270
+    second: Cliff_24
+  - first:
+      213: 4092448419697446523
+    second: Cliff_25
+  - first:
+      213: 3078877417569480896
+    second: Cliff_26
+  - first:
+      213: 4577411848039061028
+    second: Cliff_27
+  - first:
+      213: 364054026586981374
+    second: Cliff_28
+  - first:
+      213: -746256072130087035
+    second: Cliff_29
+  - first:
+      213: -6359945267268434328
+    second: Cliff_30
+  - first:
+      213: 3566675934339880094
+    second: Cliff_31
+  - first:
+      213: 8948418573774928373
+    second: Cliff_32
+  - first:
+      213: 3496861779025870075
+    second: Cliff_33
+  - first:
+      213: 448017767122655377
+    second: Cliff_34
+  - first:
+      213: -4677534834776219743
+    second: Cliff_35
+  - first:
+      213: -1576749232014060422
+    second: Cliff_36
+  - first:
+      213: -5681519643857619499
+    second: Cliff_37
+  - first:
+      213: -2169673055911447373
+    second: Cliff_38
+  - first:
+      213: 8299087434570277833
+    second: Cliff_39
+  - first:
+      213: -1014332690309305426
+    second: Cliff_40
+  - first:
+      213: 7505912214427517613
+    second: Cliff_41
+  - first:
+      213: 5117594387982070714
+    second: Cliff_42
+  - first:
+      213: 1413884539749609437
+    second: Cliff_43
+  - first:
+      213: -1988707447782832982
+    second: Cliff_44
+  - first:
+      213: -4296868452116135241
+    second: Cliff_45
+  - first:
+      213: 4873519701444230761
+    second: Cliff_46
+  - first:
+      213: -7013661321954024310
+    second: Cliff_47
+  - first:
+      213: 7432800769545487339
+    second: Cliff_48
+  - first:
+      213: -6453209974865627048
+    second: Cliff_49
+  - first:
+      213: 3364961921594417566
+    second: Cliff_50
+  - first:
+      213: -706799298130028470
+    second: Cliff_51
+  - first:
+      213: -4012791874516822506
+    second: Cliff_52
+  - first:
+      213: 2655857184138023202
+    second: Cliff_53
+  - first:
+      213: -9030523525602975071
+    second: Cliff_54
+  - first:
+      213: 16030525854439218
+    second: Cliff_55
+  - first:
+      213: 7369762209651665551
+    second: Cliff_56
+  - first:
+      213: -1274939243141340202
+    second: Cliff_57
+  - first:
+      213: -5715382471730722731
+    second: Cliff_58
+  - first:
+      213: 906146367702831425
+    second: Cliff_59
+  - first:
+      213: -4579914791089179911
+    second: Cliff_60
+  - first:
+      213: -2214014016923664549
+    second: Cliff_61
+  - first:
+      213: 1558224475079836780
+    second: Cliff_62
+  - first:
+      213: 5060146371981342073
+    second: Cliff_63
+  - first:
+      213: 4351460829665798426
+    second: Cliff_64
+  - first:
+      213: 7255557876088896041
+    second: Cliff_65
+  - first:
+      213: 3230716453290428649
+    second: Cliff_66
+  - first:
+      213: 1183547307587445966
+    second: Cliff_67
+  - first:
+      213: 3629160729517843708
+    second: Cliff_68
+  - first:
+      213: 3928141146972880873
+    second: Cliff_69
+  - first:
+      213: 9138309127012766050
+    second: Cliff_70
+  - first:
+      213: -3448303763330483252
+    second: Cliff_71
+  - first:
+      213: -4620212330559346873
+    second: Cliff_72
+  - first:
+      213: 5583732557346746760
+    second: Cliff_73
+  - first:
+      213: -4820300496506703332
+    second: Cliff_74
+  - first:
+      213: 3118703943033012498
+    second: Cliff_75
+  - first:
+      213: -1986848325603916637
+    second: Cliff_76
+  - first:
+      213: 5507734551318657736
+    second: Cliff_77
+  - first:
+      213: 2859794637152316879
+    second: Cliff_78
+  - first:
+      213: -3631587053563602946
+    second: Cliff_79
+  - first:
+      213: 3546947053044705889
+    second: Cliff_80
+  - first:
+      213: 4795284784076113981
+    second: Cliff_81
+  - first:
+      213: -1578046974660280325
+    second: Cliff_82
+  - first:
+      213: -1147174369479018737
+    second: Cliff_83
+  - first:
+      213: -96525828359889704
+    second: Cliff_84
+  - first:
+      213: -3058273562931295288
+    second: Cliff_85
+  - first:
+      213: -3751092012355896954
+    second: Cliff_86
+  - first:
+      213: 2081353018803789953
+    second: Cliff_87
+  - first:
+      213: 5207248298749608406
+    second: Cliff_88
+  - first:
+      213: -2670618265518759590
+    second: Cliff_89
+  - first:
+      213: 8797259968088149858
+    second: Cliff_90
+  - first:
+      213: -1926907413003055598
+    second: Cliff_91
+  - first:
+      213: -968869574746590038
+    second: Cliff_92
+  - first:
+      213: 586329721688615600
+    second: Cliff_93
+  - first:
+      213: 2177575594911671779
+    second: Cliff_94
+  - first:
+      213: 816637938588957987
+    second: Cliff_95
+  - first:
+      213: -6840130963545745199
+    second: Cliff_96
+  - first:
+      213: 5226564496741648469
+    second: Cliff_97
+  - first:
+      213: -378260851120157552
+    second: Cliff_98
+  - first:
+      213: 611184734012210593
+    second: Cliff_99
+  - first:
+      213: 5026260498981058823
+    second: Cliff_100
+  - first:
+      213: -4110946307316395953
+    second: Cliff_101
+  - first:
+      213: 7883822183566014658
+    second: Cliff_102
+  - first:
+      213: -7139846781938303879
+    second: Cliff_103
+  - first:
+      213: -6240102790161807752
+    second: Cliff_104
+  - first:
+      213: -5667462317344655951
+    second: Cliff_105
+  - first:
+      213: 8570362690322933617
+    second: Cliff_106
+  - first:
+      213: -3338592897901664267
+    second: Cliff_107
+  - first:
+      213: -2227495566520368417
+    second: Cliff_108
+  - first:
+      213: 6018417485686231443
+    second: Cliff_109
+  - first:
+      213: 1025800813250081268
+    second: Cliff_110
+  - first:
+      213: -5667108123900433625
+    second: Cliff_111
+  - first:
+      213: -593843385041191811
+    second: Cliff_112
+  - first:
+      213: -3906996129899475378
+    second: Cliff_113
+  - first:
+      213: -7879023567698005159
+    second: Cliff_114
+  - first:
+      213: -8792848973757786414
+    second: Cliff_115
+  - first:
+      213: 2586118438995543291
+    second: Cliff_116
+  - first:
+      213: 4104752191912225291
+    second: Cliff_117
+  - first:
+      213: 4182933647835011951
+    second: Cliff_118
+  - first:
+      213: -2025498343274631713
+    second: Cliff_119
+  - first:
+      213: 6620569061286329355
+    second: Cliff_120
+  - first:
+      213: -543211778132321180
+    second: Cliff_121
+  - first:
+      213: -4466932960286426927
+    second: Cliff_122
+  - first:
+      213: 7702268091282907275
+    second: Cliff_123
+  - first:
+      213: -9171874765208559490
+    second: Cliff_124
+  - first:
+      213: 7373470310939725002
+    second: Cliff_125
+  - first:
+      213: -2221795167878670896
+    second: Cliff_126
+  - first:
+      213: -1950588015303431911
+    second: Cliff_127
+  - first:
+      213: 2782379619171934252
+    second: Cliff_128
+  - first:
+      213: 4269460044411338865
+    second: Cliff_129
+  - first:
+      213: 8457922579564511739
+    second: Cliff_130
+  - first:
+      213: 6279938454222977466
+    second: Cliff_131
+  - first:
+      213: 7838209273823370722
+    second: Cliff_132
+  - first:
+      213: 5464999056179104767
+    second: Cliff_133
+  - first:
+      213: 2144133403249388069
+    second: Cliff_134
+  - first:
+      213: -8126628531113704325
+    second: Cliff_135
+  - first:
+      213: -39315620065526199
+    second: Cliff_136
+  - first:
+      213: 5931383026250715077
+    second: Cliff_137
+  - first:
+      213: -1857043439601927462
+    second: Cliff_138
+  - first:
+      213: 2963598757005750118
+    second: Cliff_139
+  - first:
+      213: -8239688899106464538
+    second: Cliff_140
+  - first:
+      213: -4467950517633729434
+    second: Cliff_141
+  - first:
+      213: 7954653105345300308
+    second: Cliff_142
+  - first:
+      213: 8289774113442167325
+    second: Cliff_143
+  - first:
+      213: 1478862358517926341
+    second: Cliff_144
+  - first:
+      213: -3122998291281725504
+    second: Cliff_145
+  - first:
+      213: 3813721881478816536
+    second: Cliff_146
+  - first:
+      213: 6038480090871951591
+    second: Cliff_147
+  - first:
+      213: -5261753925836727488
+    second: Cliff_148
+  - first:
+      213: 6861585901315019163
+    second: Cliff_149
+  - first:
+      213: 8136313515263506760
+    second: Cliff_150
+  - first:
+      213: 5623343033391539217
+    second: Cliff_151
+  - first:
+      213: -1605401228672954681
+    second: Cliff_152
+  - first:
+      213: -1964356166972706846
+    second: Cliff_153
+  - first:
+      213: -4929367752474973313
+    second: Cliff_154
+  - first:
+      213: 6443136358317738413
+    second: Cliff_155
+  - first:
+      213: 5332896447011063140
+    second: Cliff_156
+  - first:
+      213: 4828227682719183540
+    second: Cliff_157
+  - first:
+      213: 8005712873738714404
+    second: Cliff_158
+  - first:
+      213: 4574989119382677375
+    second: Cliff_159
+  - first:
+      213: 7916584530385624386
+    second: Cliff_160
+  - first:
+      213: -8498827545626726142
+    second: Cliff_161
+  - first:
+      213: -696286937828933488
+    second: Cliff_162
+  - first:
+      213: 1666764649354423159
+    second: Cliff_163
+  - first:
+      213: 5225819225290397557
+    second: Cliff_164
+  - first:
+      213: 8234937576662600591
+    second: Cliff_165
+  - first:
+      213: -5955474038527062978
+    second: Cliff_166
+  - first:
+      213: 1825774435854669609
+    second: Cliff_167
+  - first:
+      213: -7671044137201996876
+    second: Cliff_168
+  - first:
+      213: -817882704174930645
+    second: Cliff_169
+  - first:
+      213: 6714923262820534696
+    second: Cliff_170
+  - first:
+      213: -6060897539993351402
+    second: Cliff_171
+  - first:
+      213: 7741264723731315123
+    second: Cliff_172
+  - first:
+      213: -8011422552561055080
+    second: Cliff_173
+  - first:
+      213: -2372805747451192329
+    second: Cliff_174
+  - first:
+      213: -2636189974549209806
+    second: Cliff_175
+  - first:
+      213: 1754898228550745238
+    second: Cliff_176
+  - first:
+      213: 766210945148276429
+    second: Cliff_177
+  - first:
+      213: 1414969352683263756
+    second: Cliff_178
+  - first:
+      213: -6874343917683603098
+    second: Cliff_179
+  - first:
+      213: -5270931198096056685
+    second: Cliff_180
+  - first:
+      213: -806463840902949705
+    second: Cliff_181
+  - first:
+      213: 2345578396850117477
+    second: Cliff_182
+  - first:
+      213: 1314090736640250222
+    second: Cliff_183
+  - first:
+      213: 7642203015615203749
+    second: Cliff_184
+  - first:
+      213: 8115136200405364309
+    second: Cliff_185
+  - first:
+      213: -4022877343572756735
+    second: Cliff_186
+  - first:
+      213: 4207299900814992057
+    second: Cliff_187
+  - first:
+      213: -4701967720865936400
+    second: Cliff_188
+  - first:
+      213: 4487481666708792086
+    second: Cliff_189
+  - first:
+      213: -4542599420261627683
+    second: Cliff_190
+  - first:
+      213: 329734256775538823
+    second: Cliff_191
+  - first:
+      213: -777107340028921239
+    second: Cliff_192
+  - first:
+      213: 7075947845677902362
+    second: Cliff_193
+  - first:
+      213: -5362059461540493818
+    second: Cliff_194
+  - first:
+      213: 8882029808821678081
+    second: Cliff_195
+  - first:
+      213: 6496387908043020424
+    second: Cliff_196
+  - first:
+      213: -4583405859465715383
+    second: Cliff_197
+  - first:
+      213: -7034497754902090203
+    second: Cliff_198
+  - first:
+      213: 4761201908550385104
+    second: Cliff_199
+  - first:
+      213: 6554690337527948391
+    second: Cliff_200
+  - first:
+      213: -2281931581094915526
+    second: Cliff_201
+  - first:
+      213: -3852522300573549870
+    second: Cliff_202
+  - first:
+      213: 5521501028439152908
+    second: Cliff_203
+  - first:
+      213: -373522110216293094
+    second: Cliff_204
+  - first:
+      213: -7502088486577779121
+    second: Cliff_205
+  - first:
+      213: 8648488556838916835
+    second: Cliff_206
+  - first:
+      213: 5521059085781658499
+    second: Cliff_207
+  - first:
+      213: 3331604582610465826
+    second: Cliff_208
+  - first:
+      213: 1153504583862330044
+    second: Cliff_209
+  - first:
+      213: -2867223288682338984
+    second: Cliff_210
+  - first:
+      213: -3495308897472522090
+    second: Cliff_211
+  - first:
+      213: -6544109846475049867
+    second: Cliff_212
+  - first:
+      213: 343197061418202815
+    second: Cliff_213
+  - first:
+      213: 1266908869765889578
+    second: Cliff_214
+  - first:
+      213: -2525704371757990004
+    second: Cliff_215
+  - first:
+      213: 6284844025344856040
+    second: Cliff_216
+  - first:
+      213: -948862268387138556
+    second: Cliff_217
+  - first:
+      213: 6947765782777408017
+    second: Cliff_218
+  - first:
+      213: -1409896648459148412
+    second: Cliff_219
+  - first:
+      213: 1233876968511888872
+    second: Cliff_220
+  - first:
+      213: 7217555441941389609
+    second: Cliff_221
+  - first:
+      213: 1672526983414410279
+    second: Cliff_222
+  - first:
+      213: 2046902499379782802
+    second: Cliff_223
+  - first:
+      213: 7787553426570512904
+    second: Cliff_224
+  - first:
+      213: 6920227065665370402
+    second: Cliff_225
+  - first:
+      213: 3924591168416597003
+    second: Cliff_226
+  - first:
+      213: 9006715774001989565
+    second: Cliff_227
+  - first:
+      213: -2493599704530676745
+    second: Cliff_228
+  - first:
+      213: 7595563952923765575
+    second: Cliff_229
+  - first:
+      213: 6901790225621995324
+    second: Cliff_230
+  - first:
+      213: -708808866802070204
+    second: Cliff_231
+  - first:
+      213: -5422320534030209114
+    second: Cliff_232
+  - first:
+      213: 6317411390829774976
+    second: Cliff_233
+  - first:
+      213: 1734228853106997358
+    second: Cliff_234
+  - first:
+      213: 2413801357713056305
+    second: Cliff_235
+  - first:
+      213: -7937660834736679424
+    second: Cliff_236
+  - first:
+      213: 2570746802187491424
+    second: Cliff_237
+  - first:
+      213: -1631892698569790506
+    second: Cliff_238
+  - first:
+      213: 2671262934057722739
+    second: Cliff_239
+  - first:
+      213: 7635469261408840603
+    second: Cliff_240
+  - first:
+      213: -8552792938379836247
+    second: Cliff_241
+  - first:
+      213: 4904067274738986399
+    second: Cliff_242
+  - first:
+      213: 8763498751560577862
+    second: Cliff_243
+  - first:
+      213: 3771449933484110072
+    second: Cliff_244
+  - first:
+      213: -4819761212505507177
+    second: Cliff_245
+  - first:
+      213: 6862586756709011814
+    second: Cliff_246
+  - first:
+      213: -6749223228356484249
+    second: Cliff_247
+  - first:
+      213: 887277473091617126
+    second: Cliff_248
+  - first:
+      213: -3211088459264148148
+    second: Cliff_249
+  - first:
+      213: -5516197928855611740
+    second: Cliff_250
+  - first:
+      213: 3964272218148636828
+    second: Cliff_251
+  - first:
+      213: -7005180786842240057
+    second: Cliff_252
+  - first:
+      213: 2971925610885097099
+    second: Cliff_253
+  - first:
+      213: 6366615935110268079
+    second: Cliff_254
+  - first:
+      213: -5440063004695738822
+    second: Cliff_255
+  - first:
+      213: -5293782381706628483
+    second: Cliff_256
+  - first:
+      213: 2848769433267112237
+    second: Cliff_257
+  - first:
+      213: 6417840432472664204
+    second: Cliff_258
+  - first:
+      213: -5500620306224833357
+    second: Cliff_259
+  - first:
+      213: -6697748303415885599
+    second: Cliff_260
+  - first:
+      213: -2565417136981293618
+    second: Cliff_261
+  - first:
+      213: 5951535820395804819
+    second: Cliff_262
+  - first:
+      213: 8946829506608644223
+    second: Cliff_263
+  - first:
+      213: 5118024031968568317
+    second: Cliff_264
+  - first:
+      213: -7641085736383295353
+    second: Cliff_265
+  - first:
+      213: 204416653070396973
+    second: Cliff_266
+  - first:
+      213: 2918707829808044137
+    second: Cliff_267
+  - first:
+      213: -1517222686125860072
+    second: Cliff_268
+  - first:
+      213: -3647412922723811562
+    second: Cliff_269
+  - first:
+      213: 143762595267689793
+    second: Cliff_270
+  - first:
+      213: 5964993358364144463
+    second: Cliff_271
+  - first:
+      213: -6673878597297426332
+    second: Cliff_272
+  - first:
+      213: 7321265031491077722
+    second: Cliff_273
+  - first:
+      213: -5441777849745097647
+    second: Cliff_274
+  - first:
+      213: 870553630294823314
+    second: Cliff_275
+  - first:
+      213: 8387144945666964633
+    second: Cliff_276
+  - first:
+      213: -4661695071703270149
+    second: Cliff_277
+  - first:
+      213: -9047085021215132128
+    second: Cliff_278
+  - first:
+      213: 5888917453569003118
+    second: Cliff_279
+  - first:
+      213: 5464056166566924631
+    second: Cliff_280
+  - first:
+      213: -3973364364309780297
+    second: Cliff_281
+  - first:
+      213: 1260205777834200676
+    second: Cliff_282
+  - first:
+      213: 1417540141540192755
+    second: Cliff_283
+  - first:
+      213: -2561701635886307959
+    second: Cliff_284
+  - first:
+      213: 3057172465402212298
+    second: Cliff_285
+  - first:
+      213: -8423611222486454705
+    second: Cliff_286
+  - first:
+      213: -6459345585532982886
+    second: Cliff_287
+  - first:
+      213: -567960185977421824
+    second: Cliff_288
+  - first:
+      213: 4864512984453346270
+    second: Cliff_289
+  - first:
+      213: 9018957460208014484
+    second: Cliff_290
+  - first:
+      213: 6959803791027393843
+    second: Cliff_291
+  - first:
+      213: 50360018534258192
+    second: Cliff_292
+  - first:
+      213: 3591641069600663532
+    second: Cliff_293
+  - first:
+      213: -4682637867588640086
+    second: Cliff_294
+  - first:
+      213: 8870054507811008244
+    second: Cliff_295
+  - first:
+      213: -630143960390066967
+    second: Cliff_296
+  - first:
+      213: 4826511029185488582
+    second: Cliff_297
+  - first:
+      213: -1183451697518371532
+    second: Cliff_298
+  - first:
+      213: -3176865049531991480
+    second: Cliff_299
+  - first:
+      213: 8348983393078488989
+    second: Cliff_300
+  - first:
+      213: -415577102827729415
+    second: Cliff_301
+  - first:
+      213: 6920171286016549802
+    second: Cliff_302
+  - first:
+      213: -200572752161825841
+    second: Cliff_303
+  - first:
+      213: -1719803837122117218
+    second: Cliff_304
+  - first:
+      213: -7274345875256204046
+    second: Cliff_305
+  - first:
+      213: -663586401310105153
+    second: Cliff_306
+  - first:
+      213: 5174954374400356691
+    second: Cliff_307
+  - first:
+      213: 5576621977567717772
+    second: Cliff_308
+  - first:
+      213: -1097554773950625987
+    second: Cliff_309
+  - first:
+      213: 8978275089046749848
+    second: Cliff_310
+  - first:
+      213: -6223198700576261325
+    second: Cliff_311
+  - first:
+      213: -2556364807228397318
+    second: Cliff_312
+  - first:
+      213: 3935832079241868502
+    second: Cliff_313
+  - first:
+      213: -1337223567295468027
+    second: Cliff_314
+  - first:
+      213: 8226283237626131052
+    second: Cliff_315
+  - first:
+      213: -6410007497951918942
+    second: Cliff_316
+  - first:
+      213: 3270454531916110369
+    second: Cliff_317
+  - first:
+      213: 3369882486812399944
+    second: Cliff_318
+  - first:
+      213: 2803505140174653775
+    second: Cliff_319
+  - first:
+      213: 4541108957443609742
+    second: Cliff_320
+  - first:
+      213: 2658183087209386439
+    second: Cliff_321
+  - first:
+      213: 628876504768455190
+    second: Cliff_322
+  - first:
+      213: -1266175626533897537
+    second: Cliff_323
+  - first:
+      213: -4812898261389773080
+    second: Cliff_324
+  - first:
+      213: -4200007870510678618
+    second: Cliff_325
+  - first:
+      213: 3184938445523862403
+    second: Cliff_326
+  - first:
+      213: -8762959351670994591
+    second: Cliff_327
+  - first:
+      213: -1843656306937081513
+    second: Cliff_328
+  - first:
+      213: -2079038781179852590
+    second: Cliff_329
+  - first:
+      213: -5425867449882529855
+    second: Cliff_330
+  - first:
+      213: 2465032031095122
+    second: Cliff_331
+  - first:
+      213: 7174204549597190320
+    second: Cliff_332
+  - first:
+      213: 183733812466042264
+    second: Cliff_333
+  - first:
+      213: -7582369931945537124
+    second: Cliff_334
+  - first:
+      213: -6466168734715880070
+    second: Cliff_335
+  - first:
+      213: 2533007348299992456
+    second: Cliff_336
+  - first:
+      213: -7421035020796922364
+    second: Cliff_337
+  - first:
+      213: -2159368549392942264
+    second: Cliff_338
+  - first:
+      213: -6980169127350273872
+    second: Cliff_339
+  - first:
+      213: -8018482193685103353
+    second: Cliff_340
+  - first:
+      213: -5950769787738536146
+    second: Cliff_341
+  - first:
+      213: -5720293210373013963
+    second: Cliff_342
+  - first:
+      213: 7419815495408793136
+    second: Cliff_343
+  - first:
+      213: -7618197660108491409
+    second: Cliff_344
+  - first:
+      213: -1428432931136449627
+    second: Cliff_345
+  - first:
+      213: 4645301148137513878
+    second: Cliff_346
+  - first:
+      213: 1954071571471207699
+    second: Cliff_347
+  - first:
+      213: 2490220923156427907
+    second: Cliff_348
+  - first:
+      213: 878626296738975349
+    second: Cliff_349
+  - first:
+      213: 3392536866833328150
+    second: Cliff_350
+  - first:
+      213: -3313017401492496749
+    second: Cliff_351
+  - first:
+      213: -5306530223008983343
+    second: Cliff_352
+  - first:
+      213: 3797784038999254222
+    second: Cliff_353
+  - first:
+      213: -7294379100809794392
+    second: Cliff_354
+  - first:
+      213: -1922059662370941497
+    second: Cliff_355
+  - first:
+      213: 7323125962382115183
+    second: Cliff_356
+  - first:
+      213: -3566079700305178627
+    second: Cliff_357
+  - first:
+      213: -7930058166677982725
+    second: Cliff_358
+  - first:
+      213: -925543672350651618
+    second: Cliff_359
+  - first:
+      213: 2114682210841884764
+    second: Cliff_360
+  - first:
+      213: 8169846183713138771
+    second: Cliff_361
+  - first:
+      213: 1546534734523259682
+    second: Cliff_362
+  - first:
+      213: -8319350473530918523
+    second: Cliff_363
+  - first:
+      213: 108781522060992052
+    second: Cliff_364
+  - first:
+      213: -5656188650416526498
+    second: Cliff_365
+  - first:
+      213: 5648260547513216711
+    second: Cliff_366
+  - first:
+      213: -8593807720412087145
+    second: Cliff_367
+  - first:
+      213: -3675289650316203708
+    second: Cliff_368
+  - first:
+      213: -8158850429132989765
+    second: Cliff_369
+  - first:
+      213: -6934461350698445511
+    second: Cliff_370
+  - first:
+      213: -6311613981408579561
+    second: Cliff_371
+  - first:
+      213: -3184262460892183576
+    second: Cliff_372
+  - first:
+      213: 7300872808858985111
+    second: Cliff_373
+  - first:
+      213: -2514190047133024473
+    second: Cliff_374
+  - first:
+      213: 4148980427046649159
+    second: Cliff_375
+  - first:
+      213: 5873073700544712816
+    second: Cliff_376
+  - first:
+      213: -6518381977254673138
+    second: Cliff_377
+  - first:
+      213: 5886470826216696916
+    second: Cliff_378
+  - first:
+      213: 4147684471504282053
+    second: Cliff_379
+  - first:
+      213: -6166172203063460424
+    second: Cliff_380
+  - first:
+      213: 6155955992412750630
+    second: Cliff_381
+  - first:
+      213: -2821690819052651870
+    second: Cliff_382
+  - first:
+      213: 2181787613189786083
+    second: Cliff_383
+  - first:
+      213: -1423275908236498820
+    second: Cliff_384
+  - first:
+      213: -2494886771472477236
+    second: Cliff_385
+  - first:
+      213: -4216232194844431662
+    second: Cliff_386
+  - first:
+      213: -5933825917980229903
+    second: Cliff_387
+  - first:
+      213: 8569169182148715405
+    second: Cliff_388
+  - first:
+      213: -6133067933608197432
+    second: Cliff_389
+  - first:
+      213: 6724475659082110260
+    second: Cliff_390
+  - first:
+      213: 8224576232062972409
+    second: Cliff_391
+  - first:
+      213: -108058081478699115
+    second: Cliff_392
+  - first:
+      213: -2481311964565395712
+    second: Cliff_393
+  - first:
+      213: -6131721958646684589
+    second: Cliff_394
+  - first:
+      213: -7609364680240224223
+    second: Cliff_395
+  - first:
+      213: 8426076841772492800
+    second: Cliff_396
+  - first:
+      213: -4772678441376282384
+    second: Cliff_397
+  - first:
+      213: -6656215339671983424
+    second: Cliff_398
+  - first:
+      213: -2862015208384116311
+    second: Cliff_399
+  - first:
+      213: -3408586325669640378
+    second: Cliff_400
+  - first:
+      213: 6737540129859863107
+    second: Cliff_401
+  - first:
+      213: 2199103012361720883
+    second: Cliff_402
+  - first:
+      213: -2128620888736132276
+    second: Cliff_403
+  - first:
+      213: -2211720576125803286
+    second: Cliff_404
+  - first:
+      213: -8745855059324698622
+    second: Cliff_405
+  - first:
+      213: 4949099671435207011
+    second: Cliff_406
+  - first:
+      213: 487806582970085859
+    second: Cliff_407
+  - first:
+      213: -8466311395815972440
+    second: Cliff_408
+  - first:
+      213: -5371067051594811178
+    second: Cliff_409
+  - first:
+      213: 4250582120811651739
+    second: Cliff_410
+  - first:
+      213: 5269288691143714285
+    second: Cliff_411
+  - first:
+      213: -6066867681175402418
+    second: Cliff_412
+  - first:
+      213: 2884384112709959892
+    second: Cliff_413
+  - first:
+      213: -8541084946858936917
+    second: Cliff_414
+  - first:
+      213: -1858308297820480624
+    second: Cliff_415
+  - first:
+      213: 4856037311873988603
+    second: Cliff_416
+  - first:
+      213: -8555956989548794212
+    second: Cliff_417
+  - first:
+      213: 103331915461326161
+    second: Cliff_418
+  - first:
+      213: 8532701649634659465
+    second: Cliff_419
+  - first:
+      213: 5011894555178282771
+    second: Cliff_420
+  - first:
+      213: -6272730208336702996
+    second: Cliff_421
+  - first:
+      213: 7042011284956478389
+    second: Cliff_422
+  - first:
+      213: -7137093329290724493
+    second: Cliff_423
+  - first:
+      213: -9011549222397191903
+    second: Cliff_424
+  - first:
+      213: -277010952865706439
+    second: Cliff_425
+  - first:
+      213: -518536200122382834
+    second: Cliff_426
+  - first:
+      213: 8368036077538283846
+    second: Cliff_427
+  - first:
+      213: 4197345279962763312
+    second: Cliff_428
+  - first:
+      213: -7150435173801761006
+    second: Cliff_429
+  - first:
+      213: 4209286875376611893
+    second: Cliff_430
+  - first:
+      213: 2298010273302225436
+    second: Cliff_431
+  - first:
+      213: 5500909753898748914
+    second: Cliff_432
+  - first:
+      213: 4101661298742639604
+    second: Cliff_433
+  - first:
+      213: -2946257423875883464
+    second: Cliff_434
+  - first:
+      213: -109184209197800654
+    second: Cliff_435
+  - first:
+      213: -3692111737090934876
+    second: Cliff_436
+  - first:
+      213: -4842894988169162003
+    second: Cliff_437
+  - first:
+      213: 8098012820520765210
+    second: Cliff_438
+  - first:
+      213: -1964820511619718393
+    second: Cliff_439
+  - first:
+      213: 5661455214438508291
+    second: Cliff_440
+  - first:
+      213: 1324102392829387257
+    second: Cliff_441
+  - first:
+      213: -2570210249903178202
+    second: Cliff_442
+  - first:
+      213: -917715696912137986
+    second: Cliff_443
+  - first:
+      213: -7241459157500120979
+    second: Cliff_444
+  - first:
+      213: -6904804439925947597
+    second: Cliff_445
+  - first:
+      213: 5669206396396599800
+    second: Cliff_446
+  - first:
+      213: -1283084273096749330
+    second: Cliff_447
+  - first:
+      213: -8619212747232972247
+    second: Cliff_448
+  - first:
+      213: -7797327211336482240
+    second: Cliff_449
+  - first:
+      213: 3991635452847034074
+    second: Cliff_450
+  - first:
+      213: -1333782682644945742
+    second: Cliff_451
+  - first:
+      213: 5257683392955877404
+    second: Cliff_452
+  - first:
+      213: 2194753817015742739
+    second: Cliff_453
+  - first:
+      213: -3445516913734701614
+    second: Cliff_454
+  - first:
+      213: 6283588789145702069
+    second: Cliff_455
+  - first:
+      213: -5731069617445076565
+    second: Cliff_0
+  - first:
+      213: -6196541714960816089
+    second: Cliff_1
+  - first:
+      213: -8801982541011119716
+    second: Cliff_2
+  - first:
+      213: 2356371586556752842
+    second: Cliff_3
+  - first:
+      213: 4751345214323418269
+    second: Cliff_4
+  - first:
+      213: 3651516711833186310
+    second: Cliff_5
+  - first:
+      213: 4162040598480006847
+    second: Cliff_6
+  - first:
+      213: 3533256582756371701
+    second: Cliff_7
+  - first:
+      213: 7898642369827331925
+    second: Cliff_8
+  - first:
+      213: 6119952637107514615
+    second: Cliff_9
+  - first:
+      213: 5068821844553148223
+    second: Cliff_10
+  - first:
+      213: -7048120916289532485
+    second: Cliff_11
+  - first:
+      213: 2236119012787428839
+    second: Cliff_12
+  - first:
+      213: 2638651055288904366
+    second: Cliff_13
+  - first:
+      213: 3884816897074936278
+    second: Cliff_14
+  - first:
+      213: 6337566224483557211
+    second: Cliff_15
+  - first:
+      213: 7467036557008035502
+    second: Cliff_16
+  - first:
+      213: 3436124709222748127
+    second: Cliff_17
+  - first:
+      213: -2655329665977997278
+    second: Cliff_18
+  - first:
+      213: -2422253664437162795
+    second: Cliff_19
+  - first:
+      213: -8069059625886448874
+    second: Cliff_20
+  - first:
+      213: 5560382652663713604
+    second: Cliff_21
+  - first:
+      213: -2015373607878518745
+    second: Cliff_22
+  - first:
+      213: -2074048458075901994
+    second: Cliff_23
+  - first:
+      213: 1022868210253923771
+    second: Cliff_24
+  - first:
+      213: -3411832819304305322
+    second: Cliff_25
+  - first:
+      213: 7750333840070426952
+    second: Cliff_26
+  - first:
+      213: -1609874138272008750
+    second: Cliff_27
+  - first:
+      213: 1405102266931211996
+    second: Cliff_28
+  - first:
+      213: -7752885183098799811
+    second: Cliff_29
+  - first:
+      213: 6193497623962145924
+    second: Cliff_30
+  - first:
+      213: 5299033786771288729
+    second: Cliff_31
+  - first:
+      213: 8319058799832498056
+    second: Cliff_32
+  - first:
+      213: -6538671475012599770
+    second: Cliff_33
+  - first:
+      213: 1710072585232032400
+    second: Cliff_34
+  - first:
+      213: -4336644144715832638
+    second: Cliff_35
+  - first:
+      213: -2335644972051967535
+    second: Cliff_36
+  - first:
+      213: 759402784116372997
+    second: Cliff_37
+  - first:
+      213: 7849503562280091235
+    second: Cliff_38
+  - first:
+      213: -445083153692470140
+    second: Cliff_39
+  - first:
+      213: 8466379811903351862
+    second: Cliff_40
+  - first:
+      213: 449526123992654291
+    second: Cliff_41
+  - first:
+      213: -8800185306452485218
+    second: Cliff_42
+  - first:
+      213: -3756087197505802227
+    second: Cliff_43
+  - first:
+      213: -2045292375009915131
+    second: Cliff_44
+  - first:
+      213: 6046140637060222768
+    second: Cliff_45
+  - first:
+      213: -1621025939499457421
+    second: Cliff_46
+  - first:
+      213: -734303416866310767
+    second: Cliff_47
+  - first:
+      213: 8617225239631229252
+    second: Cliff_48
+  - first:
+      213: -5409529980894340010
+    second: Cliff_49
+  - first:
+      213: 8432237445905485989
+    second: Cliff_50
+  - first:
+      213: -4493823349331107418
+    second: Cliff_51
+  - first:
+      213: 4398914564348297302
+    second: Cliff_52
+  - first:
+      213: -4552474349903269984
+    second: Cliff_53
+  - first:
+      213: 7645103333951328507
+    second: Cliff_54
+  - first:
+      213: 7944128410321408301
+    second: Cliff_55
+  - first:
+      213: -1630527399502267547
+    second: Cliff_56
+  - first:
+      213: 3390402675395320972
+    second: Cliff_57
+  - first:
+      213: -9184074084853535282
+    second: Cliff_58
+  - first:
+      213: -359132830109095695
+    second: Cliff_59
+  - first:
+      213: -7022760695107361686
+    second: Cliff_60
+  - first:
+      213: 2414733631371353280
+    second: Cliff_61
+  - first:
+      213: -880985381213691280
+    second: Cliff_62
+  - first:
+      213: 3798396210332383547
+    second: Cliff_63
+  - first:
+      213: -1984878998166403759
+    second: Cliff_64
+  - first:
+      213: 2908377903782756241
+    second: Cliff_65
+  - first:
+      213: -5900617365191019440
+    second: Cliff_66
+  - first:
+      213: -914411438997324547
+    second: Cliff_67
+  - first:
+      213: 3736782391316141101
+    second: Cliff_68
+  - first:
+      213: 1840546923123750650
+    second: Cliff_69
+  - first:
+      213: 2175838467460293935
+    second: Cliff_70
+  - first:
+      213: 5051645465124203858
+    second: Cliff_71
+  - first:
+      213: -4137842293216875191
+    second: Cliff_72
+  - first:
+      213: -359698727518389659
+    second: Cliff_73
+  - first:
+      213: 3248341321113663534
+    second: Cliff_74
+  - first:
+      213: -2540383985653067252
+    second: Cliff_75
+  - first:
+      213: 1125696666139180441
+    second: Cliff_76
+  - first:
+      213: 6394885625395719265
+    second: Cliff_77
+  - first:
+      213: -6666508506223998004
+    second: Cliff_78
+  - first:
+      213: -3238825767884622826
+    second: Cliff_79
+  - first:
+      213: -1006258903915663659
+    second: Cliff_80
+  - first:
+      213: -806074858604080188
+    second: Cliff_81
+  - first:
+      213: -7835599876068927375
+    second: Cliff_82
+  - first:
+      213: 1382941471379843467
+    second: Cliff_83
+  - first:
+      213: -7660941446720523767
+    second: Cliff_84
+  - first:
+      213: -5792999966219665790
+    second: Cliff_85
+  - first:
+      213: -682387676945242265
+    second: Cliff_86
+  - first:
+      213: -2313611525156223032
+    second: Cliff_87
+  - first:
+      213: -2731983166972120628
+    second: Cliff_88
+  - first:
+      213: -4476104179452880345
+    second: Cliff_89
+  - first:
+      213: 2901404764737265497
+    second: Cliff_90
+  - first:
+      213: 4531274383422126968
+    second: Cliff_91
+  - first:
+      213: -8468794780656677029
+    second: Cliff_92
+  - first:
+      213: 239446503298716814
+    second: Cliff_93
+  - first:
+      213: -6005813971993240349
+    second: Cliff_94
+  - first:
+      213: -5003914696620872054
+    second: Cliff_95
+  - first:
+      213: 8601546420580849413
+    second: Cliff_96
+  - first:
+      213: -1737132814971258659
+    second: Cliff_97
+  - first:
+      213: 6158566110146318975
+    second: Cliff_98
+  - first:
+      213: -3705752510486713741
+    second: Cliff_99
+  - first:
+      213: 5312650637256360705
+    second: Cliff_100
+  - first:
+      213: -5643278300981371451
+    second: Cliff_101
+  - first:
+      213: 8326609296867907808
+    second: Cliff_102
+  - first:
+      213: -5464426629754623431
+    second: Cliff_103
+  - first:
+      213: 2862868692496337130
+    second: Cliff_104
+  - first:
+      213: 4262463105044270108
+    second: Cliff_105
+  - first:
+      213: -4498652536108551421
+    second: Cliff_106
+  - first:
+      213: -2129771007365000737
+    second: Cliff_107
+  - first:
+      213: -546665584644390167
+    second: Cliff_108
+  - first:
+      213: 6892469289240318297
+    second: Cliff_109
+  - first:
+      213: 3492447409189403907
+    second: Cliff_110
+  - first:
+      213: -467208653217974972
+    second: Cliff_111
+  - first:
+      213: -5583023400051538825
+    second: Cliff_112
+  - first:
+      213: 6707635602924095864
+    second: Cliff_113
+  - first:
+      213: 9120150715785030009
+    second: Cliff_114
+  - first:
+      213: 2427042450114766753
+    second: Cliff_115
+  - first:
+      213: -5120200159503109597
+    second: Cliff_116
+  - first:
+      213: 1449540124825367371
+    second: Cliff_117
+  - first:
+      213: 8176372872215210695
+    second: Cliff_118
+  - first:
+      213: 6926844374276692602
+    second: Cliff_119
+  - first:
+      213: -2702956794146346039
+    second: Cliff_120
+  - first:
+      213: -5829488043249803548
+    second: Cliff_121
+  - first:
+      213: 468756313383927452
+    second: Cliff_122
+  - first:
+      213: 2134761121502256539
+    second: Cliff_123
+  - first:
+      213: -3686603073524530
+    second: Cliff_124
+  - first:
+      213: 4805073809001646603
+    second: Cliff_125
+  - first:
+      213: -2671756086061201302
+    second: Cliff_126
+  - first:
+      213: 4816517297313593555
+    second: Cliff_127
+  - first:
+      213: 2583228999909470350
+    second: Cliff_128
+  - first:
+      213: 3383737246601290079
+    second: Cliff_129
+  - first:
+      213: -5392846104439481792
+    second: Cliff_130
+  - first:
+      213: 2475696973023852917
+    second: Cliff_131
+  - first:
+      213: 2056819249252588739
+    second: Cliff_132
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cliff_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 486
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba107252c862770b0800000000000000
+      internalID: -5731069617445076565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 486
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728eed31426710aa0800000000000000
+      internalID: -6196541714960816089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 486
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9197db838319d580800000000000000
+      internalID: -8801982541011119716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 486
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3f98f297383b020800000000000000
+      internalID: 2356371586556752842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 454
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94eff87c4b20f140800000000000000
+      internalID: 4751345214323418269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 454
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60038345a1bcca230800000000000000
+      internalID: 3651516711833186310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 454
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbea7257fd982c930800000000000000
+      internalID: 4162040598480006847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 454
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc018b5426a80130800000000000000
+      internalID: 3533256582756371701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 454
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f5865f26d9d9d60800000000000000
+      internalID: 7898642369827331925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 454
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc2201af707ee450800000000000000
+      internalID: 6119952637107514615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 454
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37a452ac92185640800000000000000
+      internalID: 5068821844553148223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_11
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 454
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdcf828e5b003e90800000000000000
+      internalID: -7048120916289532485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 454
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed11b8056a480f10800000000000000
+      internalID: 2236119012787428839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 422
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa64b4972f5e9420800000000000000
+      internalID: 2638651055288904366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 422
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9369f9264a9e530800000000000000
+      internalID: 3884816897074936278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 422
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f1bde37ee83f750800000000000000
+      internalID: 6337566224483557211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 422
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaed151cf2e30a760800000000000000
+      internalID: 7467036557008035502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_17
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 422
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf0a29b7319faf20800000000000000
+      internalID: 3436124709222748127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 422
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22823d1ccbf562bd0800000000000000
+      internalID: -2655329665977997278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 390
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dca557302d626ed0800000000000000
+      internalID: -2422253664437162795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 390
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613879f9501f40090800000000000000
+      internalID: -8069059625886448874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 390
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fc34bff827a2d40800000000000000
+      internalID: 5560382652663713604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 390
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72814bca164f704e0800000000000000
+      internalID: -2015373607878518745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 390
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df60798aef7733e0800000000000000
+      internalID: -2074048458075901994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 390
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb58934c735f13e00800000000000000
+      internalID: 1022868210253923771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 358
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65de854a02cb6a0d0800000000000000
+      internalID: -3411832819304305322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 358
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84146148097be8b60800000000000000
+      internalID: 7750333840070426952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 358
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5753f200498a9e0800000000000000
+      internalID: -1609874138272008750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 358
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdee785311def7310800000000000000
+      internalID: 1405102266931211996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 358
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39b105a008386490800000000000000
+      internalID: -7752885183098799811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 358
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4845d714649b3f550800000000000000
+      internalID: 6193497623962145924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 358
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992bb415723f98940800000000000000
+      internalID: 5299033786771288729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 358
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f7a95f6eb337370800000000000000
+      internalID: 8319058799832498056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_33
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 358
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62005e4dfe8f145a0800000000000000
+      internalID: -6538671475012599770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_34
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 358
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092a3e6b4f56bb710800000000000000
+      internalID: 1710072585232032400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_35
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 358
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c26fec702521d3c0800000000000000
+      internalID: -4336644144715832638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 326
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d15a6fc54f169fd0800000000000000
+      internalID: -2335644972051967535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 326
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506f2b40fc0f98a00800000000000000
+      internalID: 759402784116372997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 326
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e3ed4c6e90fec60800000000000000
+      internalID: 7849503562280091235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_39
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 326
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48456a8da3fb2d9f0800000000000000
+      internalID: -445083153692470140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 326
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ca906059f9e7570800000000000000
+      internalID: 8466379811903351862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 326
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d127d9c0a90d3600800000000000000
+      internalID: 449526123992654291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 326
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b9943d6167fd580800000000000000
+      internalID: -8800185306452485218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_43
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 326
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00364f2892bfdbc0800000000000000
+      internalID: -3756087197505802227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_44
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 326
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f08bddb69ad93e0800000000000000
+      internalID: -2045292375009915131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_45
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 326
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f470620e438e350800000000000000
+      internalID: 6046140637060222768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_46
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 326
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374e0702f75f089e0800000000000000
+      internalID: -1621025939499457421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_47
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 294
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195f350deea3fc5f0800000000000000
+      internalID: -734303416866310767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 294
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441ffbd03b8869770800000000000000
+      internalID: 8617225239631229252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_49
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 294
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c97fea42d7de4b0800000000000000
+      internalID: -5409529980894340010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 294
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a091f8f743550570800000000000000
+      internalID: 8432237445905485989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_51
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 294
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a163cb197bb2a1c0800000000000000
+      internalID: -4493823349331107418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_52
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 294
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650c5456d751c0d30800000000000000
+      internalID: 4398914564348297302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_53
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 294
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af20f4e2bc52d0c0800000000000000
+      internalID: -4552474349903269984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_54
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 294
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0d25b0afcd81a60800000000000000
+      internalID: 7645103333951328507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_55
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 294
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21db4b03b63f3e60800000000000000
+      internalID: 7944128410321408301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_56
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 294
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b302418f33f59e0800000000000000
+      internalID: -1630527399502267547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cd87825412d0f20800000000000000
+      internalID: 3390402675395320972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_58
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd2f65774d9b8080800000000000000
+      internalID: -9184074084853535282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_59
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8aa22089a140bf0800000000000000
+      internalID: -359132830109095695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_60
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64ec812b542a8e90800000000000000
+      internalID: -7022760695107361686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc1415a17bd28120800000000000000
+      internalID: 2414733631371353280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_62
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0722274a67c16c3f0800000000000000
+      internalID: -880985381213691280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_63
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b393d018a3d96b430800000000000000
+      internalID: 3798396210332383547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_64
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1558828411b4474e0800000000000000
+      internalID: -1984878998166403759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ff0935b42ac5820800000000000000
+      internalID: 2908377903782756241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_66
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054b948e4cbcc1ea0800000000000000
+      internalID: -5900617365191019440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_67
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfcb20814ab5f43f0800000000000000
+      internalID: -914411438997324547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_68
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24555d59c7bbd330800000000000000
+      internalID: 3736782391316141101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_69
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6ba39ccafea8910800000000000000
+      internalID: 1840546923123750650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_70
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25e99dde81223e10800000000000000
+      internalID: 2175838467460293935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_71
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 262
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25de0f729cc0b1640800000000000000
+      internalID: 5051645465124203858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_72
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 230
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d68388b5e6396c0800000000000000
+      internalID: -4137842293216875191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_73
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 230
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a3b10c9e7120bf0800000000000000
+      internalID: -359698727518389659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 230
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28f33a983d641d20800000000000000
+      internalID: 3248341321113663534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_75
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 230
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02de0e793ebebcd0800000000000000
+      internalID: -2540383985653067252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 230
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d311657274f9f00800000000000000
+      internalID: 1125696666139180441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_77
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 230
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ca6f048923fb850800000000000000
+      internalID: 6394885625395719265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_78
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 230
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb066295ddcb73a0800000000000000
+      internalID: -6666508506223998004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_79
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 230
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614fad7cf116d03d0800000000000000
+      internalID: -3238825767884622826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_80
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 230
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de6808bbdc0902f0800000000000000
+      internalID: -1006258903915663659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_81
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 198
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3d786df2f30d4f0800000000000000
+      internalID: -806074858604080188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_82
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 198
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17811d07d6b524390800000000000000
+      internalID: -7835599876068927375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_83
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 198
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8960cae0f1313310800000000000000
+      internalID: 1382941471379843467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_84
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 198
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902f727f75edea590800000000000000
+      internalID: -7660941446720523767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_85
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 198
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e70ad29312b9fa0800000000000000
+      internalID: -5792999966219665790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_86
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 198
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7672394f50ca786f0800000000000000
+      internalID: -682387676945242265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_87
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 198
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c740de639664efd0800000000000000
+      internalID: -2313611525156223032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_88
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 198
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1b748c8cb061ad0800000000000000
+      internalID: -2731983166972120628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_89
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 198
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ad116d6fea1e1c0800000000000000
+      internalID: -4476104179452880345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_90
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 198
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f5acfd24cd34820800000000000000
+      internalID: 2901404764737265497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_91
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 166
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87bf3b34b0252ee30800000000000000
+      internalID: 4531274383422126968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_92
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 166
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fc64f340cc87a80800000000000000
+      internalID: -8468794780656677029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_93
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 166
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8454db735fa25300800000000000000
+      internalID: 239446503298716814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_94
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 166
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecd34c330017aca0800000000000000
+      internalID: -6005813971993240349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_95
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 166
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e6e8568168e8ab0800000000000000
+      internalID: -5003914696620872054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_96
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 166
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50711c585e4de5770800000000000000
+      internalID: 8601546420580849413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_97
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 166
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8b6f398e674e7e0800000000000000
+      internalID: -1737132814971258659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_98
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 166
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72d7096f3f977550800000000000000
+      internalID: 6158566110146318975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_99
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 166
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a6de2c9b5829cc0800000000000000
+      internalID: -3705752510486713741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_100
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 134
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1030b616b935ab940800000000000000
+      internalID: 5312650637256360705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_101
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 134
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cdd55dd84c0fa1b0800000000000000
+      internalID: -5643278300981371451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_102
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 134
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8d64b0a0f0e8370800000000000000
+      internalID: 8326609296867907808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_103
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 134
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a6a489ee47a24b0800000000000000
+      internalID: -5464426629754623431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_104
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 102
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8c4de58e3fab720800000000000000
+      internalID: 2862868692496337130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_105
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 102
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c4f5c4c9f472b30800000000000000
+      internalID: 4262463105044270108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_106
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 102
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303f6517a539191c0800000000000000
+      internalID: -4498652536108551421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_107
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 102
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd155158d888172e0800000000000000
+      internalID: -2129771007365000737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_108
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 102
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e207501c8ad968f0800000000000000
+      internalID: -546665584644390167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_109
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 102
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951557afc48f6af50800000000000000
+      internalID: 6892469289240318297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_110
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 102
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30db7753a6aa77030800000000000000
+      internalID: 3492447409189403907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_111
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 102
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44534fc84342489f0800000000000000
+      internalID: -467208653217974972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_112
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 102
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7740c3b3ccd1582b0800000000000000
+      internalID: -5583023400051538825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_113
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879cd03da0f461d50800000000000000
+      internalID: 6707635602924095864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_114
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 70
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979246061c8419e70800000000000000
+      internalID: 9120150715785030009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_115
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 70
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a762e5df369ea120800000000000000
+      internalID: 2427042450114766753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_116
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 70
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3223be9351561f8b0800000000000000
+      internalID: -5120200159503109597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 38
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4334e3401dcd1410800000000000000
+      internalID: 1449540124825367371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_118
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 38
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca27879ecf487170800000000000000
+      internalID: 8176372872215210695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_119
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 38
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7adc272248112060800000000000000
+      internalID: 6926844374276692602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbada9dd1b2d7ad0800000000000000
+      internalID: -2702956794146346039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_121
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee55b7b28f791fa0800000000000000
+      internalID: -5829488043249803548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_122
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e7879226b518600800000000000000
+      internalID: 468756313383927452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_123
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9dd477fde130ad10800000000000000
+      internalID: 2134761121502256539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_124
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccef55dd07e2fff0800000000000000
+      internalID: -3686603073524530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliff_125
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a8311cb2d0fa240800000000000000
+      internalID: 4805073809001646603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

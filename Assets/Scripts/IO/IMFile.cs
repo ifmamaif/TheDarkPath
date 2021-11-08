@@ -1,45 +1,48 @@
 ﻿using UnityEngine;
 using System.IO;
 
-public class IMFile
+namespace TheDarkPath
 {
-
-	public static string ReadLine(FileStream f)
+	public class IMFile
 	{
-		char auxChar = '\0';
-		string auxString;
-		while (auxChar <= 32)
+
+		public static string ReadLine(FileStream f)
 		{
+			char auxChar = '\0';
+			string auxString;
+			while (auxChar <= 32)
+			{
+				auxChar = (char)f.ReadByte();
+			}
+
+			auxString = auxChar.ToString();
 			auxChar = (char)f.ReadByte();
+			while (auxChar > 31)
+			{
+				auxString += auxChar.ToString();
+				auxChar = (char)f.ReadByte();
+			}
+			return auxString;
 		}
 
-		auxString = auxChar.ToString();
-		auxChar = (char)f.ReadByte();
-		while (auxChar > 31)
+		public static string Filter(string stringSource)
 		{
-			auxString += auxChar.ToString();
-			auxChar = (char)f.ReadByte();
+			int positionLastSlash = 0;
+			int positionDot = 0;
+			for (int i = 0; i < stringSource.Length; i++)
+			{
+				if (stringSource[i] == '/')
+					positionLastSlash = i + 1;
+				else if (stringSource[i] == '.')
+					positionDot = i;
+			}
+			string result = new string(stringSource[positionLastSlash], 1);
+			for (int i = positionLastSlash + 1; i < positionDot; i++)
+			{
+				result += stringSource[i];
+			}
+			return result;
 		}
-		return auxString;
+
 	}
-
-	public static string Filter(string stringSource)
-	{
-		int positionLastSlash = 0;
-		int positionDot = 0;
-		for (int i = 0; i < stringSource.Length; i++)
-		{
-			if (stringSource[i] == '/')
-				positionLastSlash = i + 1;
-			else if (stringSource[i] == '.')
-				positionDot = i;
-		}
-		string result = new string(stringSource[positionLastSlash], 1);
-		for (int i = positionLastSlash + 1; i < positionDot; i++)
-		{
-			result += stringSource[i];
-		}
-		return result;
-	}
-
 }

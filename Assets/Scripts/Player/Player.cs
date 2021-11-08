@@ -2,61 +2,64 @@
 //using System.Collections;
 using UnityEditor;
 
-public class Player
+namespace TheDarkPath
 {
-	private GameObject player;
-	private SpriteRenderer sprite;
-	private Animator animator;
-
-
-	public Player()
+	public class Player
 	{
-		player = new GameObject("Player");
-		player.tag = "Player";
-		player.transform.position = new Vector3(0, 0, -0.1f);
+		private GameObject player;
+		private SpriteRenderer sprite;
+		private Animator animator;
 
-		player.AddComponent<SpriteRenderer>();
-		sprite = player.GetComponent<SpriteRenderer>();
-		//sprite.sprite = Resources.Load < Sprite	> ("Player/bd02");
 
-		Material playerMaterial = new Material(Shader.Find("Sprites/Default"));
-		playerMaterial.name = "playerMaterial";
-		sprite.material = playerMaterial;
+		public Player()
+		{
+			player = new GameObject("Player");
+			player.tag = "Player";
+			player.transform.position = new Vector3(0, 0, -0.1f);
 
-		player.AddComponent<AudioListener>();
+			player.AddComponent<SpriteRenderer>();
+			sprite = player.GetComponent<SpriteRenderer>();
+			//sprite.sprite = Resources.Load < Sprite	> ("Player/bd02");
 
-		player.AddComponent<BoxCollider2D>();
-		player.GetComponent<BoxCollider2D>().size = new Vector2(1.02f, 1.24f);
+			Material playerMaterial = new Material(Shader.Find("Sprites/Default"));
+			playerMaterial.name = "playerMaterial";
+			sprite.material = playerMaterial;
 
-		player.AddComponent<Rigidbody2D>();
-		player.GetComponent<Rigidbody2D>().isKinematic = true;
+			player.AddComponent<AudioListener>();
 
-		player.AddComponent<TestCollision>();
+			player.AddComponent<BoxCollider2D>();
+			player.GetComponent<BoxCollider2D>().size = new Vector2(1.02f, 1.24f);
 
-		player.AddComponent<Animator>();
-		animator = player.GetComponent<Animator>();
-		animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Animations/Player");
-	}
+			player.AddComponent<Rigidbody2D>();
+			player.GetComponent<Rigidbody2D>().isKinematic = true;
 
-	public void Move(Vector2Int move, int speed)
-	{
-		int direction;
+			player.AddComponent<TestCollision>();
 
-		if (move.x == 1)
-			direction = 6;
-		else if (move.x == -1)
-			direction = 4;
-		else if (move.y == 1)
-			direction = 8;
-		else if (move.y == -1)
-			direction = 2;
-		else
-			direction = 0;
-		animator.SetInteger("direction", direction);
-	}
+			player.AddComponent<Animator>();
+			animator = player.GetComponent<Animator>();
+			animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Animations/Player");
+		}
 
-	public GameObject DestroyGameObject()
-	{
-		return player;
+		public void Move(Vector2Int move, int speed)
+		{
+			int direction;
+
+			if (move.x == 1)
+				direction = 6;
+			else if (move.x == -1)
+				direction = 4;
+			else if (move.y == 1)
+				direction = 8;
+			else if (move.y == -1)
+				direction = 2;
+			else
+				direction = 0;
+			animator.SetInteger("direction", direction);
+		}
+
+		public GameObject DestroyGameObject()
+		{
+			return player;
+		}
 	}
 }

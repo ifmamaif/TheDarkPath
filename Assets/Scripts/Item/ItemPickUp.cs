@@ -1,22 +1,25 @@
 ﻿using UnityEngine;
 
-public class ItemPickUp : Interactable
+namespace TheDarkPath
 {
-
-	public Item item;
-
-	public override void Interact()
+	public class ItemPickUp : Interactable
 	{
-		base.Interact();
-		PickUp();
-	}
 
-	void PickUp()
-	{
-		Debug.Log("Picking up " + item.name);
-		// Add to inventory
-		bool wasPickedUp = Inventory.instance.Add(item);
-		if (wasPickedUp)
-			Destroy(gameObject);
+		public Item item;
+
+		public override void Interact()
+		{
+			base.Interact();
+			PickUp();
+		}
+
+		void PickUp()
+		{
+			Debug.Log("Picking up " + item.name);
+			// Add to inventory
+			bool wasPickedUp = Inventory.instance.AddItem(item);
+			if (wasPickedUp)
+				Destroy(gameObject);
+		}
 	}
 }
