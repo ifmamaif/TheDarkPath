@@ -85,61 +85,58 @@ namespace TheDarkPath
             }
         }
 
-        private GameObject CreatePortal(PortalPoint.Position position, Transform parent)
+        private GameObject CreatePortal(PortalPoint.Position position, Transform parent,ref Room roomScript)
         {
-            var gameObject = new GameObject();
-            gameObject.transform.parent = parent;
-            gameObject.transform.localScale = new Vector3(textureSizeX, textureSizeY, 1);
+            string name = "GameObject";
+            Vector3 localPos = Vector3.zero;
+            var playerPos = Vector3.zero;
+            float offsetSpawn = 1.3f;
 
             switch (position)
             {
                 case PortalPoint.Position.East:
-                    gameObject.transform.localPosition = new Vector3(30f, 15f, 0);
+                    name = "Portal East";
+                    localPos = new Vector3(30f, 15f, -1);
+                    playerPos = new Vector3(-offsetSpawn, 0, 0);
                     break;
                 case PortalPoint.Position.West:
-                    gameObject.transform.localPosition = new Vector3(1f, 15f, 0);
+                    localPos = new Vector3(1f, 15f, -1);
+                    name = "Portal West";
+                    playerPos = new Vector3(offsetSpawn, 0, 0);
                     break;
                 case PortalPoint.Position.South:
-                    gameObject.transform.localPosition = new Vector3(15f, 1f, 0);
+                    name = "Portal South";
+                    localPos = new Vector3(15f, 1f, -1);
+                    playerPos = new Vector3(0, offsetSpawn, 0);
                     break;
                 case PortalPoint.Position.North:
-                    gameObject.transform.localPosition = new Vector3(15f,29f, 0);
+                    name = "Portal North";
+                    localPos = new Vector3(15f, 29f, -1);
+                    playerPos = new Vector3(0, -offsetSpawn, 0);
                     break;
             }
+
+            var gameObject = new GameObject(name);
+            gameObject.transform.parent = parent;
+            gameObject.transform.localScale = new Vector3(textureSizeX, textureSizeY, 1);
+            gameObject.transform.localPosition = localPos;
 
             var boxCollider2D = gameObject.AddComponent<BoxCollider2D>();
             boxCollider2D.isTrigger = true;
 
             var spriteRenderer = gameObject.AddComponent<SpriteRenderer>();
             spriteRenderer.sprite = Resources.Load<Sprite>("Sprites/portal");
-            spriteRenderer.color = new Color(255,92,255,255);
+            spriteRenderer.color = new Color(1,92/255f,1,1);
 
             var portalScript = gameObject.AddComponent<PortalPoint>();
             portalScript.position = position;
 
             var playerSpawn = new GameObject();
             playerSpawn.transform.parent = gameObject.transform;
-            var playerPos = Vector3.zero;
-            float offsetSpawn = 1.3f;
-            switch (position)
-            {
-                case PortalPoint.Position.East:
-                    playerPos = new Vector3(-offsetSpawn, 0, 0);
-                    break;
-                case PortalPoint.Position.West:
-                    playerPos = new Vector3(offsetSpawn, 0, 0);
-                    break;
-                case PortalPoint.Position.South:
-                    playerPos = new Vector3(0, offsetSpawn, 0);
-                    break;
-                case PortalPoint.Position.North:
-                    playerPos = new Vector3(0, -offsetSpawn, 0);
-                    break;
-            }
-
             playerSpawn.transform.localPosition = playerPos;
 
             portalScript.playerSpawnPosition = playerSpawn.transform;
+            roomScript.portalPoints.Add(portalScript);
 
             return gameObject;
         }
@@ -190,10 +187,29 @@ namespace TheDarkPath
                 InstanteCell((width - 1), j, portals, pereteNormalPathString, true);
             }
 
-            var gam1 = CreatePortal(PortalPoint.Position.East, dynamicRoom.transform);
-            gam1 = CreatePortal(PortalPoint.Position.West, dynamicRoom.transform);
-            gam1 = CreatePortal(PortalPoint.Position.South, dynamicRoom.transform);
-            gam1 = CreatePortal(PortalPoint.Position.North, dynamicRoom.transform);
+            var roomScript = dynamicRoom.AddComponent<Room>();
+            var roomUnitManager = dynamicRoom.AddComponent<RoomUnitManager>();
+
+            var playerSpawn = new GameObject("PlayerSpawn");
+            playerSpawn.transform.parent = dynamicRoom.transform;
+            playerSpawn.transform.localPosition = new Vector3(15, 15, 0);
+            roomScript.playerSpawn = playerSpawn.transform;
+
+            roomScript.portalPoints = new List<PortalPoint>();
+          
+            CreatePortal(PortalPoint.Position.North, dynamicRoom.transform, ref roomScript);
+            CreatePortal(PortalPoint.Position.South, dynamicRoom.transform, ref roomScript);            
+            CreatePortal(PortalPoint.Position.East, dynamicRoom.transform, ref roomScript);
+            CreatePortal(PortalPoint.Position.West, dynamicRoom.transform, ref roomScript);
+
+            roomScript.enemySpawnPoints = new List<GameObject>();
+            var gam1 = new GameObject("Enemy spawn 1");
+            gam1.transform.parent = dynamicRoom.transform;
+            gam1.transform.localPosition = new Vector3(4, 2);
+            roomScript.enemySpawnPoints.Add(gam1);
+
+            roomUnitManager.enemiesPrefabs = new List<GameObject>();
+            roomUnitManager.enemiesPrefabs.Add(Resources.Load<GameObject>("Prefabs/Enemy"));
 
             rooms[matrixPosition.x, matrixPosition.y] = dynamicRoom;
         }
