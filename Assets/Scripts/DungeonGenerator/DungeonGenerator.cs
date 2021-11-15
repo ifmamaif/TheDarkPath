@@ -8,7 +8,7 @@ namespace TheDarkPath
     {
         private List<Vector2Int> takenPositions;
         private Vector2Int mainRoomIndex;
-        private int numberOfRooms;
+        private int numberOfRooms = 20;
         private int[,] rooms;
         private Vector2Int gridSize;
 
@@ -28,9 +28,10 @@ namespace TheDarkPath
                                    // 8
         }
 
-        public int[,] GenerateDungeon(Vector2Int size, int seed = 0)
+        public int[,] GenerateDungeon(Vector2Int size, Vector2Int mainIndex, int seed = 0)
         {
             gridSize = size;
+            mainRoomIndex = mainIndex != Vector2Int.zero ? mainIndex: Vector2Int.zero;
 
             Initialize();
             // lays out the actual map
@@ -44,7 +45,7 @@ namespace TheDarkPath
         private void Initialize()
         {
             // Validate 
-            // Make sure we dont try to make more rooms than can fit in our grid
+            // Make sure we don't try to make more rooms than can fit in our grid
             int value = gridSize.x * gridSize.y;
             if (numberOfRooms >= value)
             {
@@ -54,15 +55,8 @@ namespace TheDarkPath
 
             // Set the main room
             rooms = new int[gridSize.x, gridSize.y];
-
-            mainRoomIndex = Vector2Int.zero;
             takenPositions = new List<Vector2Int>();
-            takenPositions.Insert(0, mainRoomIndex);
-        }
-
-        float Rand()
-        {
-            return UnityEngine.Random.value;
+            AddRoom(mainRoomIndex);
         }
 
         private void CreateRooms()
@@ -82,7 +76,7 @@ namespace TheDarkPath
                 Vector2Int checkPos = NewPosition();
 
                 //test new position
-                if (HasMultipleNeighbors(checkPos) && Rand() > randomCompare)
+                if (HasMultipleNeighbors(checkPos) && PerlinNoise.Random.Rand01_s() > randomCompare)
                 {
                     int iterations = 0;
                     do
@@ -96,8 +90,14 @@ namespace TheDarkPath
                     }
                 }
 
-                takenPositions.Insert(0, checkPos);
+                AddRoom(checkPos);
             }
+        }
+
+        private void AddRoom(Vector2Int position)
+        {
+            takenPositions.Insert(0, position);
+            rooms[position.x, position.y] = 1;
         }
 
         private Vector2Int NewPositionWrapper(Func<int> calcIndex)
@@ -108,10 +108,10 @@ namespace TheDarkPath
                 checkingPos = GetNewPosition(calcIndex());
 
             } while (takenPositions.Contains(checkingPos)
-                || checkingPos.x >= mainRoomIndex.x
-                || checkingPos.x < -mainRoomIndex.x
-                || checkingPos.y >= mainRoomIndex.y
-                || checkingPos.y < -mainRoomIndex.y
+                || checkingPos.x >= gridSize.x
+                || checkingPos.x < 0
+                || checkingPos.y >= gridSize.y
+                || checkingPos.y < 0
             ); //make sure the position is valid
             return checkingPos;
         }
@@ -134,7 +134,7 @@ namespace TheDarkPath
                 int index;
                 do
                 {
-                    //instead of getting a room to find an adject empty space, we start with one that only 
+                    //instead of getting a room to find an abject empty space, we start with one that only 
                     //as one neighbor. This will make it more likely that it returns a room that branches out
                     index = PickARandomRoom();
                     inc++;
@@ -143,7 +143,7 @@ namespace TheDarkPath
             });
 
             if (inc >= MAX_ITERATIONS)
-            { // break loop if it takes too long: this loop isnt garuanteed to find solution, which is fine for this
+            { // break loop if it takes too long: this loop isn't guaranteed to find solution, which is fine for this
                 Debug.Log("Error: could not find position with only one neighbor");
             }
             return checkingPos;
@@ -153,8 +153,8 @@ namespace TheDarkPath
         {
             //capture its x, y position
             Vector2Int newPosition = new Vector2Int(takenPositions[index].x, takenPositions[index].y);
-            bool UpDown = Rand() < 0.5f;                //randomly pick wether to look on hor or vert axis
-            int positive = (Rand() < 0.5f) ? 1 : -1;    //pick whether to be positive or negative on that axis
+            bool UpDown = PerlinNoise.Random.Rand01_s() < 0.5f;                //randomly pick wether to look on hor or vert axis
+            int positive = (PerlinNoise.Random.Rand01_s() < 0.5f) ? 1 : -1;    //pick whether to be positive or negative on that axis
 
             //find the position based on the above bools
             if (UpDown)
@@ -171,7 +171,7 @@ namespace TheDarkPath
 
         private int PickARandomRoom()
         {
-            return Mathf.RoundToInt(Rand() * (takenPositions.Count - 1)); // pick a random room
+            return Mathf.RoundToInt(PerlinNoise.Random.Rand01_s() * (takenPositions.Count - 1)); // pick a random room
         }
 
         private bool HasMultipleNeighbors(Vector2Int checkingPos)
