@@ -515,10 +515,10 @@ MonoBehaviour:
   speed: 10
   rotationSpeed: 10
   rotationAngle: 0
-  rb: {fileID: 0}
+  rb: {fileID: 896132648}
   horz: 0
   vert: 0
-  imgSprite: {fileID: 0}
+  imgSprite: {fileID: 896132646}
 --- !u!61 &896132650
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -619,7 +619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialHealth: 3
   healthVisual: {fileID: 1086534508}
-  sceneControllerScript: {fileID: 0}
+  sceneControllerScript: {fileID: 1649108216}
 --- !u!114 &896132655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,7 +722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 896132645}
-  camera: {fileID: 0}
+  camera: {fileID: 519420031}
 --- !u!1 &1086534506
 GameObject:
   m_ObjectHideFlags: 0
