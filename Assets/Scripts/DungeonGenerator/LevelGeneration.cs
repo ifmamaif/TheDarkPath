@@ -5,7 +5,7 @@ namespace TheDarkPath
 {
     public class LevelGeneration : MonoBehaviour
     {
-        private GameObject[,] rooms = null;
+        private GameObject[,] rooms;
         private readonly Vector2Int GRID_SIZE = new Vector2Int(14, 14);
         private Vector2Int mainRoomIndex;
         private readonly Vector2Int HARD_CODED = new Vector2Int(31, 32);
