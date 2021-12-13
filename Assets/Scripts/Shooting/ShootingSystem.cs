@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.EventSystems;
 
 namespace TheDarkPath
 {
@@ -11,37 +7,34 @@ namespace TheDarkPath
     public class ShootingSystem : EventBehaviour
     {
         [SerializeField]
-        private List<Weapon> weapons = null;
+        private List<Weapon> weapons;
         [SerializeField]
-        protected Weapon currentWeapon = null;
+        protected Weapon currentWeapon;
         [SerializeField]
         private int idCurrentWeapon = 0;
         [SerializeField]
         private Cooldown cooldown;
         [SerializeField]
-        private GameObject WeaponArm = null;
+        private GameObject WeaponArm;
         [SerializeField]
-        private TargetProvider targetProvider = null;
+        private TargetProvider targetProvider;
 
         // Start is called before the first frame update
         void Start()
         {
             if (weapons == null)
-            {
                 Debug.LogError("weapons is null");
-            }
 
             if (targetProvider == null)
-            {
                 Debug.LogError("targetProvider is null");
-            }
+
+
 
             RegisterEvent(EventSystem.EventType.Shoot, () => { Shoot(); });
 
+
             if (weapons.Count > 0)
-            {
                 currentWeapon = weapons[0];
-            }
 
             cooldown = new Cooldown();
 
