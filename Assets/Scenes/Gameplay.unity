@@ -515,8 +515,10 @@ MonoBehaviour:
   speed: 10
   rotationSpeed: 10
   rotationAngle: 0
+  rb: {fileID: 0}
   horz: 0
   vert: 0
+  imgSprite: {fileID: 0}
 --- !u!61 &896132650
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -617,6 +619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialHealth: 3
   healthVisual: {fileID: 1086534508}
+  sceneControllerScript: {fileID: 0}
 --- !u!114 &896132655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -719,6 +722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 896132645}
+  camera: {fileID: 0}
 --- !u!1 &1086534506
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,11 +771,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203c7289715f0da4889f878fcfde2603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heart0Sprite: {fileID: 21300000, guid: 9e6198d485f664a43a04898480b3ca97, type: 3}
-  heart1Sprite: {fileID: 21300000, guid: 0fda93aa3edad694aa6b1f693a3928d0, type: 3}
-  heart2Sprite: {fileID: 21300000, guid: 839462f8ac95faa419bb81e0e83df56e, type: 3}
-  heart3Sprite: {fileID: 21300000, guid: 6d546ec9298a48c4e845fc73744e317e, type: 3}
-  heart4Sprite: {fileID: 21300000, guid: da1147f5c58c2ba43aff14ae6e8caa63, type: 3}
+  heart:
+  - {fileID: 21300000, guid: 9e6198d485f664a43a04898480b3ca97, type: 3}
+  - {fileID: 21300000, guid: 0fda93aa3edad694aa6b1f693a3928d0, type: 3}
+  - {fileID: 21300000, guid: 839462f8ac95faa419bb81e0e83df56e, type: 3}
+  - {fileID: 21300000, guid: 6d546ec9298a48c4e845fc73744e317e, type: 3}
+  - {fileID: 21300000, guid: da1147f5c58c2ba43aff14ae6e8caa63, type: 3}
 --- !u!1 &1195975928
 GameObject:
   m_ObjectHideFlags: 0
