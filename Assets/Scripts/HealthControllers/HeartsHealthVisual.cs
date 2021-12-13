@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,16 +6,7 @@ namespace TheDarkPath
 {
     public class HeartsHealthVisual : MonoBehaviour
     {
-        [SerializeField]
-        private Sprite heart0Sprite = null;
-        [SerializeField]
-        private Sprite heart1Sprite = null;
-        [SerializeField]
-        private Sprite heart2Sprite = null;
-        [SerializeField]
-        private Sprite heart3Sprite = null;
-        [SerializeField]
-        private Sprite heart4Sprite = null;
+        public Sprite[] heart;
 
         private List<HeartImage> heartImageList;
         private HeartsHealthSystem heartsHealthSystem;
@@ -75,7 +65,7 @@ namespace TheDarkPath
 
             // Set Sprite
             Image heartImageUI = heartGameObject.GetComponent<Image>();
-            heartImageUI.sprite = heart0Sprite;
+            heartImageUI.sprite = heart[0];
 
             HeartImage heartImage = new HeartImage(this, heartImageUI);
             heartImageList.Add(heartImage);
@@ -100,23 +90,23 @@ namespace TheDarkPath
                 switch (fragments)
                 {
                     case 0:
-                        heartImage.sprite = heartsHealthVisual.heart0Sprite;
+                        heartImage.sprite = heartsHealthVisual.heart[0];
                         break;
                     case 1:
-                        heartImage.sprite = heartsHealthVisual.heart1Sprite;
+                        heartImage.sprite = heartsHealthVisual.heart[1];
                         break;
                     case 2:
-                        heartImage.sprite = heartsHealthVisual.heart2Sprite;
+                        heartImage.sprite = heartsHealthVisual.heart[2];
                         break;
                     case 3:
-                        heartImage.sprite = heartsHealthVisual.heart3Sprite;
+                        heartImage.sprite = heartsHealthVisual.heart[3];
                         break;
                     case 4:
-                        heartImage.sprite = heartsHealthVisual.heart4Sprite;
+                        heartImage.sprite = heartsHealthVisual.heart[4];
                         break;
                     default:
                         Debug.LogWarning("Exceeded maximum heart segments!");
-                        heartImage.sprite = heartsHealthVisual.heart0Sprite;
+                        heartImage.sprite = heartsHealthVisual.heart[0];
                         break;
                 }
             }
