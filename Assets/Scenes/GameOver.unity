@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 336215493}
   - component: {fileID: 336215492}
   m_Layer: 5
-  m_Name: Text
+  m_Name: YouDiedText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 1747386237}
   - component: {fileID: 1747386236}
   m_Layer: 5
-  m_Name: Button
+  m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -18,15 +18,13 @@ namespace TheDarkPath
         {
             rb = GetComponent<Rigidbody2D>();
         }
+
         void FixedUpdate()
         {
             var dir = target.position - transform.position;
             if (dir.magnitude > clearance)
             {
                 rb.velocity = dir.normalized * speed;
-                //transform.rotation = Quaternion.Euler(transform.rotation.x,
-                //    transform.rotation.y,
-                //    Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f);
             }
             else
             {

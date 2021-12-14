@@ -1,4 +1,4 @@
-﻿namespace PerlinNoise
+namespace PerlinNoise
 {
     public static partial class PerlinNoise
     {
@@ -26,7 +26,7 @@
             int dim = 2;
             float[] inputs = new float[] { x, y };
             int[] inputInts = new int[dim];
-            for(int i=0;i<dim;i++)
+            for (int i = 0; i < dim; i++)
             {
                 inputInts[i] = PerlinNoiseUtils.AsIntegerFast(inputs[i]);
                 inputs[i] -= inputInts[i];
@@ -63,18 +63,18 @@
             float contributieZgomot4 = PerlinNoiseUtils.ProdusScalarVector(2, PerlinNoiseUtils.g_VECTORI_DIRECTIE[gradient4], new float[] { xMinim, yMinim });
 
             float[] valoareEstompata = new float[dim];
-            for(int i=0;i<dim;i++)
+            for (int i = 0; i < dim; i++)
             {
                 valoareEstompata[i] = PerlinNoiseUtils.HermitMixture(inputs[i]);
             }
             float valoareEstompata1 = PerlinNoiseUtils.HermitMixture(x);
             float valoareEstompata2 = PerlinNoiseUtils.HermitMixture(y);
 
-           //float[] noise = new float[dim];
-           //for (int i = 0; i < dim; i++)
-           //{
-           //    
-           //}
+            //float[] noise = new float[dim];
+            //for (int i = 0; i < dim; i++)
+            //{
+            //    
+            //}
             float noise1 = PerlinNoiseUtils.LinearInterpolation(contributieZgomot1, contributieZgomot3, valoareEstompata1);
             float noise2 = PerlinNoiseUtils.LinearInterpolation(contributieZgomot2, contributieZgomot4, valoareEstompata1);
             float liFinal = PerlinNoiseUtils.LinearInterpolation(noise1, noise2, valoareEstompata2);
@@ -92,7 +92,7 @@
             int dim = 3;
             float[] inputs = new float[] { x, y, z };
             int[] inputInts = new int[dim];
-            for(int i=0;i<dim;i++)
+            for (int i = 0; i < dim; i++)
             {
                 inputInts[i] = PerlinNoiseUtils.AsIntegerFast(i);
                 inputs[i] -= inputInts[i];
@@ -152,7 +152,7 @@
 
                   liA = PerlinNoiseUtils.LinearInterpolation(liAA, liBA, hmY),
                   liB = PerlinNoiseUtils.LinearInterpolation(liAB, liBB, hmY),
-                         
+
                   liFinal = PerlinNoiseUtils.LinearInterpolation(liA, liB, hmZ);
 
             return liFinal;
@@ -174,7 +174,7 @@
             int gradient;
             float[] noises = new float[corners];
             float[] tmp = new float[dim];
-            for (int i=0;i<corners;i++)
+            for (int i = 0; i < corners; i++)
             {
                 gradient = 0;
                 for (int j = dim - 1; j >= 0; j--)
@@ -186,13 +186,13 @@
                 noises[i] = PerlinNoiseUtils.ProdusScalarVector(3, PerlinNoiseUtils.g_VECTORI_DIRECTIE[gradient], tmp);
             }
 
-            for(int i=0;i<dim;i++)
+            for (int i = 0; i < dim; i++)
             {
                 corners /= 2;
                 float hermitMixture = PerlinNoiseUtils.HermitMixture(inputs[i]);
-                for (int j=0;j<corners;j++)
+                for (int j = 0; j < corners; j++)
                 {
-                    noises[j] = PerlinNoiseUtils.LinearInterpolation(noises[j], noises[j+corners], hermitMixture);
+                    noises[j] = PerlinNoiseUtils.LinearInterpolation(noises[j], noises[j + corners], hermitMixture);
                 }
             }
 
@@ -200,6 +200,5 @@
         }
 
 
-      
     }
 }
