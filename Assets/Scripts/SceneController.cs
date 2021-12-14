@@ -41,6 +41,11 @@ namespace TheDarkPath
             SceneManager.LoadScene(mainMenuScene);
         }
 
+        public void QuitGame()
+        {
+            Application.Quit();
+        }
+
         public void TeleportPlayer(Transform newPosition)
         {
             playerTransform.position = newPosition.position;

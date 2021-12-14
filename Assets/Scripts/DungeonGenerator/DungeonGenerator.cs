@@ -31,7 +31,7 @@ namespace TheDarkPath
         public int[,] GenerateDungeon(Vector2Int size, Vector2Int mainIndex, int seed = 0)
         {
             gridSize = size;
-            mainRoomIndex = mainIndex != Vector2Int.zero ? mainIndex: Vector2Int.zero;
+            mainRoomIndex = mainIndex != Vector2Int.zero ? mainIndex : Vector2Int.zero;
 
             Initialize();
             // lays out the actual map

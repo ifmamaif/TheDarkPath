@@ -11,7 +11,7 @@ namespace TheDarkPath
         private readonly Vector2Int HARD_CODED = new Vector2Int(31, 32);
         private readonly string ROOM_PREFAB = "Prefabs/Rooms/Main Room";
         private readonly string terenPathString = "Sprites/freepath";//"Tiles/Dungeon/Misc 2_89"; // "Sprites/1"
-        private readonly string pereteNormalPathString = "Sprites/wall"; 
+        private readonly string pereteNormalPathString = "Sprites/wall";
 
 
         public int numberOfRooms = 20;
@@ -79,13 +79,13 @@ namespace TheDarkPath
             cell.transform.localScale = new Vector3(textureSizeX, textureSizeY, 1);
             var renderer = cell.AddComponent<SpriteRenderer>();
             renderer.sprite = Resources.Load<Sprite>(texture);
-            if(collider)
+            if (collider)
             {
                 cell.AddComponent<BoxCollider2D>();
             }
         }
 
-        private GameObject CreatePortal(PortalPoint.Position position, Transform parent,ref Room roomScript)
+        private GameObject CreatePortal(PortalPoint.Position position, Transform parent, ref Room roomScript)
         {
             string name = "GameObject";
             Vector3 localPos = Vector3.zero;
@@ -126,7 +126,7 @@ namespace TheDarkPath
 
             var spriteRenderer = gameObject.AddComponent<SpriteRenderer>();
             spriteRenderer.sprite = Resources.Load<Sprite>("Sprites/portal");
-            spriteRenderer.color = new Color(1,92/255f,1,1);
+            spriteRenderer.color = new Color(1, 92 / 255f, 1, 1);
 
             var portalScript = gameObject.AddComponent<PortalPoint>();
             portalScript.position = position;
@@ -143,10 +143,10 @@ namespace TheDarkPath
 
         private void InstantiateNewRoom(Vector2Int matrixPosition, bool defeated)
         {
-            GameObject dynamicRoom = new GameObject("Room "+ matrixPosition.x + " " + matrixPosition.y);
+            GameObject dynamicRoom = new GameObject("Room " + matrixPosition.x + " " + matrixPosition.y);
             //dynamicRoom.transform.parent = rooms[matrixPosition.x, matrixPosition.y].transform;
             //dynamicRoom.transform.localPosition = Vector3.zero;
-            dynamicRoom.transform.position = new Vector3((HARD_CODED.x+2) * matrixPosition.x, HARD_CODED.y * matrixPosition.y, 1);
+            dynamicRoom.transform.position = new Vector3((HARD_CODED.x + 2) * matrixPosition.x, HARD_CODED.y * matrixPosition.y, 1);
 
             GameObject portals = new GameObject("Cells");
             portals.transform.parent = dynamicRoom.transform;
@@ -196,9 +196,9 @@ namespace TheDarkPath
             roomScript.playerSpawn = playerSpawn.transform;
 
             roomScript.portalPoints = new List<PortalPoint>();
-          
+
             CreatePortal(PortalPoint.Position.North, dynamicRoom.transform, ref roomScript);
-            CreatePortal(PortalPoint.Position.South, dynamicRoom.transform, ref roomScript);            
+            CreatePortal(PortalPoint.Position.South, dynamicRoom.transform, ref roomScript);
             CreatePortal(PortalPoint.Position.East, dynamicRoom.transform, ref roomScript);
             CreatePortal(PortalPoint.Position.West, dynamicRoom.transform, ref roomScript);
 

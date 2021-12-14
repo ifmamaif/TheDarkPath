@@ -1,4 +1,4 @@
-﻿namespace PerlinNoise
+namespace PerlinNoise
 {
     public static partial class PerlinNoise
     {
@@ -59,7 +59,7 @@
 
                   liA = PerlinNoiseUtils.LinearInterpolation(liAA, liBA, bcY),
                   liB = PerlinNoiseUtils.LinearInterpolation(liAB, liBB, bcY),
-                  
+
                   liFinal = PerlinNoiseUtils.LinearInterpolation(liA, liB, bcZ);
 
             return liFinal;
