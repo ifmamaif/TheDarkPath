@@ -203,22 +203,22 @@ namespace TheDarkPath
                     }
                     if (y - 1 >= 0 && rooms[x, y - 1] != 0)
                     {
-                        room |= (int)Room.TypeRoom.South;
+                        room |= (int)Room.RoomPosition.South;
                     }
 
                     if (y + 1 < gridSize.y && rooms[x, y + 1] != 0)
                     {
-                        room |= (int)Room.TypeRoom.North;
+                        room |= (int)Room.RoomPosition.North;
                     }
 
                     if (x - 1 >= 0 && rooms[x - 1, y] != 0)
                     {
-                        room |= (int)Room.TypeRoom.West;
+                        room |= (int)Room.RoomPosition.West;
                     }
 
                     if (x + 1 < gridSize.x && rooms[x + 1, y] != 0)
                     {
-                        room |= (int)Room.TypeRoom.East;
+                        room |= (int)Room.RoomPosition.East;
                     }
 
                     rooms[x, y] = room;
