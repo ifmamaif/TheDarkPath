@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace TheDarkPath
@@ -11,7 +9,7 @@ namespace TheDarkPath
         private string gameplayScene = "Gameplay";
         private string gameOverScene = "GameOver";
         private string mainMenuScene = "Menu";
-        public Transform playerTransform = null;
+        public Transform playerTransform;
 
 
         private void Start()
