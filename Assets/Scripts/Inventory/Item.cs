@@ -8,9 +8,9 @@ namespace TheDarkPath
 		new public string name = "New Item";        // Name of the item
 		public Sprite icon = null;              // Item icon
 		public Type type = Type.Unknown;
-        public bool isDefaultItem = false;
+		public bool isDefaultItem = false;
 
-        public enum Type
+		public enum Type
 		{
 			Unknown,
 

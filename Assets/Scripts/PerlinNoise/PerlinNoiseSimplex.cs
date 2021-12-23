@@ -29,7 +29,7 @@
         public static float Dot(int dim, int[] g, float[] values)
         {
             float sum = 0;
-            for(int i=0;i< dim;i++)
+            for (int i = 0; i < dim; i++)
             {
                 sum += g[i] * values[i];
             }
@@ -56,20 +56,20 @@
             return result;
         }
 
-        public static float ContributionCorner(int dim, int gi, float[] values )
+        public static float ContributionCorner(int dim, int gi, float[] values)
         {
-            if(dim < 2 || dim > 4)
+            if (dim < 2 || dim > 4)
             {
                 return 0.0f;
             }
 
             float t0 = 0.5f;
-            for(int i=0; i<dim;i++)
+            for (int i = 0; i < dim; i++)
             {
                 t0 -= values[i] * values[i];
             }
 
-            if(t0 < 0)
+            if (t0 < 0)
             {
                 return 0.0f;
             }
@@ -77,8 +77,8 @@
             t0 *= t0;
             t0 *= t0;
             int[] gradientVect;
-            
-            switch(dim)
+
+            switch (dim)
             {
                 case 2:
                 case 3:
@@ -109,7 +109,7 @@
             x01[1] = x01[0] - 1.0f;
 
             float[] nt01 = new float[DIM];
-            for(int i=0;i<DIM;i++)
+            for (int i = 0; i < DIM; i++)
             {
                 nt01[i] = 1.0f - x01[i] * x01[i];
                 nt01[i] *= nt01[i];
@@ -148,8 +148,8 @@
             xy[0][1] = inputs[1] - inputsInt[1] - valueUnskewed;
 
             bool decalajBool = xy[0][0] > xy[0][1];
-            int decalajX = decalajBool? 1 : 0,
-                decalajY = decalajBool? 0 : 1;
+            int decalajX = decalajBool ? 1 : 0,
+                decalajY = decalajBool ? 0 : 1;
 
             xy[1][0] = xy[0][0] - decalajX + FACTOR_UNSKEW;
             xy[1][1] = xy[0][1] - decalajY + FACTOR_UNSKEW;
@@ -167,7 +167,7 @@
             };
 
             float[] noiseContributions = new float[CORNERS];
-            for(int index=0; index < CORNERS;index++)
+            for (int index = 0; index < CORNERS; index++)
             {
                 int gradient = PerlinNoiseUtils.HashTable[inputsInt[0] + offset[index][0] +
                                PerlinNoiseUtils.HashTable[inputsInt[1] + offset[index][1]]] % 12;

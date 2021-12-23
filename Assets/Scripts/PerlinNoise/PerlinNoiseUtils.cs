@@ -1,4 +1,4 @@
-﻿namespace PerlinNoise
+namespace PerlinNoise
 {
     public static class PerlinNoiseUtils
     {

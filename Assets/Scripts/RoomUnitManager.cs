@@ -11,6 +11,9 @@ namespace TheDarkPath
         public List<GameObject> enemiesPrefabs = null;
         public List<GameObject> enemies = new List<GameObject>();
 
+        private Room scriptRoom;
+        private SceneController sceneController;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -18,12 +21,20 @@ namespace TheDarkPath
             {
                 Debug.LogError("This room does not have enemy spawns assigned. Is this intended?");
             }
+
+            scriptRoom = this.gameObject.GetComponent<Room>();
+            var sceneControllerGameObject = GameObject.Find("Scene Controller");
+            if(sceneControllerGameObject == null)
+            {
+                Debug.LogError("There is no Scene Controller");
+            }
+            sceneController = sceneController.GetComponent<SceneController>();
         }
 
         public void SpawnEnemies(int count, int multiplier = 1)
         {
-            List<GameObject> enemySpawns = this.gameObject.GetComponent<Room>().enemySpawnPoints;
-            Transform playerTransform = GameObject.Find("Scene Controller").GetComponent<SceneController>().playerTransform; ;
+            List<GameObject> enemySpawns = scriptRoom.EnemySpawnPoints;
+            Transform playerTransform = sceneController.playerTransform; ;
 
             for (int i = multiplier; i > 0; i--)
             {
@@ -53,7 +64,7 @@ namespace TheDarkPath
                     enemies.RemoveAt(i);
                     if (enemies.Count == 0)
                     {
-                        gameObject.GetComponent<Room>().RoomDefeated();
+                        scriptRoom.RoomDefeated();
                     }
                 }
             }

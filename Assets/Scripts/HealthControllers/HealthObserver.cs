@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 namespace TheDarkPath
 {
@@ -9,8 +6,10 @@ namespace TheDarkPath
     public class HealthObserver : EventBehaviour
     {
         [SerializeField] private int initialHealth = 0;
-        [SerializeField] private HeartsHealthVisual healthVisual = null;
+        [SerializeField] private HeartsHealthVisual healthVisual;
         HeartsHealthSystem healthSystem;
+
+        public SceneController sceneControllerScript;
 
         // Start is called before the first frame update
         void Start()
@@ -25,7 +24,7 @@ namespace TheDarkPath
             healthVisual.RefreshAllHearts();
             if (healthSystem.IsDead())
             {
-                GameObject.Find("Scene Controller").GetComponent<SceneController>().TriggerEvent(EventSystem.EventType.PlayerDeath);
+                sceneControllerScript.TriggerEvent(EventSystem.EventType.PlayerDeath);
             }
         }
 
