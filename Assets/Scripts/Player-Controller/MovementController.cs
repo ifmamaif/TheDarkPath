@@ -7,6 +7,7 @@ namespace TheDarkPath
 {
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(HealthObserver))]
+    [RequireComponent(typeof(PlayerSFX))]
     public class MovementController : MonoBehaviour
     {
         [SerializeField]
@@ -20,11 +21,26 @@ namespace TheDarkPath
 
         public SpriteRenderer imgSprite;
 
+        private bool isRolling = false;
+
         void FixedUpdate()
         {
             GetMovement();
             var dir = Vector2.ClampMagnitude(new Vector2(horz, vert), 1f);
             rb.velocity = speed * dir;
+            if (horz != 0 || vert != 0)
+            {
+                if (!isRolling)
+                {
+                    isRolling = true;
+                    gameObject.GetComponent<PlayerSFX>().playRoll();
+                }
+            } 
+            else if (horz == 0 && vert == 0)
+            {
+                isRolling = false;
+                gameObject.GetComponent<PlayerSFX>().stopRoll();
+            }
         }
 
         void GetMovement()

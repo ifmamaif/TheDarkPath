@@ -10,13 +10,25 @@ namespace TheDarkPath
         private GameObject player;
         public new Camera camera;
 
+        private Vector3 facingRightPos = new Vector3(-0.25f, 0.5f, 0);
+        private Vector3 facingLeftPos = new Vector3(0.25f, 0.5f, 0);
+
         private void Start()
         {
             if (camera == null)
                 Debug.LogError("camera is missing");
         }
+
         private void FixedUpdate()
         {
+            if (player.GetComponent<SpriteRenderer>().flipX)
+            {
+                gameObject.transform.position = player.transform.position + facingLeftPos;
+            }
+            else
+            {
+                gameObject.transform.position = player.transform.position + facingRightPos;
+            }
             Rotate();
         }
 

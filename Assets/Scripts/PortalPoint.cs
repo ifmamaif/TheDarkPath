@@ -45,6 +45,7 @@ namespace TheDarkPath
                 return;
             }
 
+            gameObject.GetComponent<AudioSource>().Play();
             TeleportPlayerToNewRoom(collision.transform);
         }
 

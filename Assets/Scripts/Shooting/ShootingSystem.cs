@@ -62,13 +62,13 @@ namespace TheDarkPath
             if (WeaponArm != null)
             {
                 currentWeapon.Shoot(WeaponArm.transform, this.gameObject, targetProvider);
+                gameObject.GetComponent<PlayerSFX>().playShoot();
             }
             else
             {
                 currentWeapon.Shoot(transform, this.gameObject, targetProvider);
+                gameObject.GetComponent<PlayerSFX>().playShoot();
             }
         }
-
-
     }
 }

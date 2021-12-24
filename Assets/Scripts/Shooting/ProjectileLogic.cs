@@ -25,15 +25,17 @@ namespace TheDarkPath
         public float damage;
 
         private string ownerTag;
-
+        private int frameNr = 0;
 
         // Start is called before the first frame update
         void Start()
         {
+            GetComponent<Renderer>().enabled = false;
+            gameObject.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
             rb = GetComponent<Rigidbody2D>();
             direction = (Vector3)targetProvider.GetTarget() - ownerTransform.position;
             rb.rotation = (Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg) - 90f;
-            rb.position += direction.normalized * 1.35f;
+            rb.position += direction.normalized * 0.75f;
             StartingPosition = new Vector2(transform.position.x, transform.position.y);
             ownerTag = unit.tag;
         }
@@ -41,6 +43,11 @@ namespace TheDarkPath
         // Update is called once per frame
         void Update()
         {
+            frameNr++;
+            if (frameNr > 5)
+            {
+                GetComponent<Renderer>().enabled = true;
+            }
             rb.velocity = direction.normalized * speed;
             currentPosition = new Vector2(transform.position.x, transform.position.y);
             if (Vector2.Distance(StartingPosition, currentPosition) > range)

@@ -146,6 +146,10 @@ namespace TheDarkPath
             var portalScript = gameObject.AddComponent<PortalPoint>();
             portalScript.position = position;
 
+            var soundSource = gameObject.AddComponent<AudioSource>();
+            soundSource.clip = Resources.Load("Audio/Teleport SFX") as AudioClip;
+            soundSource.volume = .35f;
+
             var playerSpawn = new GameObject();
             playerSpawn.transform.parent = gameObject.transform;
             playerSpawn.transform.localPosition = playerPos;
