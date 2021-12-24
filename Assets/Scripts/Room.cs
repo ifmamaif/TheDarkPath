@@ -91,12 +91,12 @@ namespace TheDarkPath
             CreatePortal(PortalPoint.Position.East, dynamicRoom.transform);
             CreatePortal(PortalPoint.Position.West, dynamicRoom.transform);
 
-            var gam1 = new GameObject("Enemy spawn 1");
-            gam1.transform.parent = dynamicRoom.transform;
-            gam1.transform.localPosition = new Vector3(4, 2);
+            var spawn1 = new GameObject("Enemy spawn 1");
+            spawn1.transform.parent = dynamicRoom.transform;
+            spawn1.transform.localPosition = new Vector3(4, 2, 0);
             EnemySpawnPoints = new List<GameObject>()
             {
-                gam1
+                spawn1
             };
         }
 

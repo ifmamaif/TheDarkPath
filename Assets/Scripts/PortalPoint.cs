@@ -51,7 +51,7 @@ namespace TheDarkPath
 
         void TeleportPlayerToNewRoom(Transform playerTransform)
         {
-            // TODO: do not let this commented into final version you dumbfuck!!!!!!
+            // TODO: do not let this commented into final version!!!!!!
             //this.transform.parent.gameObject.SetActive(false);
             //linkedRoom.SetActive(true);
 
@@ -79,7 +79,7 @@ namespace TheDarkPath
                     i = (int)Position.East;
                     break;
                 default:
-                    Debug.Log("Esti prost");
+                    Debug.Log("Eroare");
                     break;
             }
 
