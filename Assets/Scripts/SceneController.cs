@@ -15,9 +15,7 @@ namespace TheDarkPath
         private void Start()
         {
             var playerGameObject = GameObject.Find(PLAYER_GAMEOBJECT_NAME);
-            PlayerTransform = playerGameObject == null ? null : PlayerTransform = playerGameObject.transform;
-
-            PlayerTransform = playerGameObject.transform;
+            PlayerTransform = playerGameObject == null ? null : playerGameObject.transform;
             RegisterEvent(EventSystem.EventType.PlayerDeath, () => { LoadGameOverScene(); });
         }
 
