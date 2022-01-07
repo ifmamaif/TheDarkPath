@@ -28,7 +28,7 @@ namespace TheDarkPath
             {
                 Debug.LogError("There is no Scene Controller");
             }
-            sceneController = sceneController.GetComponent<SceneController>();
+            sceneController = sceneControllerGameObject.GetComponent<SceneController>();
         }
 
         public void SpawnEnemies(int count, int multiplier = 1)
