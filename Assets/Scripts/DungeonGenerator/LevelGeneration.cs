@@ -1,5 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace TheDarkPath
@@ -18,7 +20,7 @@ namespace TheDarkPath
 
         public void Start()
         {
-            parentRooms = new GameObject(NAME_PARENT_ROOMS);
+            parentRooms = UnityWrapper.InstantiateGameObject(NAME_PARENT_ROOMS);
             mainRoomIndex = GRID_SIZE / 2;       // IMPORTANT : mainRoomIndex must be half of gridSize
             Generate();
         }
@@ -40,19 +42,28 @@ namespace TheDarkPath
 
         public void Generate()
         {
-            rooms = new GameObject[GRID_SIZE.x, GRID_SIZE.y];
-            int[,] terrain = DUNGEON_GENERATOR.GenerateDungeon(GRID_SIZE, mainRoomIndex);
 
-            for (int i = 0; i < GRID_SIZE.x; i++)
+            rooms = UnityWrapper.InstantiateGameObject(GRID_SIZE.x, GRID_SIZE.y);
+            int[,] terrain = null;
+
+            Utils.MessureTime(() =>
             {
-                for (int j = 0; j < GRID_SIZE.y; j++)
+                terrain = DUNGEON_GENERATOR.GenerateDungeon(GRID_SIZE, mainRoomIndex);
+            }, "Dungeon generator");
+
+            Utils.MessureTime(() =>
+            {
+                for (int i = 0; i < GRID_SIZE.x; i++)
                 {
-                    if (terrain[i, j] != 0)
+                    for (int j = 0; j < GRID_SIZE.y; j++)
                     {
-                        InstantiateNewRoom(new Vector2Int(i, j), false);
+                        if (terrain[i, j] != 0)
+                        {
+                            InstantiateNewRoom(new Vector2Int(i, j), false);
+                        }
                     }
                 }
-            }
+            }, "InstantiateRooms");
 
             SetRoomDoors();
 
@@ -67,7 +78,7 @@ namespace TheDarkPath
 
         private void InstantiateCell(int i, int j, GameObject parent, string texture, bool collider = false)
         {
-            GameObject cell = new GameObject(i + " " + j);
+            GameObject cell = UnityWrapper.InstantiateGameObject(i + " " + j);
             cell.transform.parent = parent.transform;
             cell.transform.localPosition = new Vector3(j, i, 0);
             cell.transform.localScale = new Vector3(Constant.TEXTURE_SIZE_X, Constant.TEXTURE_SIZE_Y, 1);
@@ -81,11 +92,11 @@ namespace TheDarkPath
 
         private void InstantiateNewRoom(Vector2Int matrixPosition, bool defeated)
         {
-            GameObject dynamicRoom = new GameObject("Room " + matrixPosition.x + " " + matrixPosition.y);
+            GameObject dynamicRoom = UnityWrapper.InstantiateGameObject("Room " + matrixPosition.x + " " + matrixPosition.y);
             dynamicRoom.transform.parent = parentRooms.transform;
             dynamicRoom.transform.position = new Vector3(HARD_CODED.x * matrixPosition.x, HARD_CODED.y * matrixPosition.y, 1);
 
-            GameObject portals = new GameObject("Cells");
+            GameObject portals = UnityWrapper.InstantiateGameObject("Cells");
             portals.transform.parent = dynamicRoom.transform;
             portals.transform.localPosition = Vector3.zero;
 
@@ -111,7 +122,7 @@ namespace TheDarkPath
             rooms[matrixPosition.x, matrixPosition.y] = dynamicRoom;
         }
 
-        private void InstantiateArrayCells(int i, int j, int width, int height, GameObject portals, string texturePath, bool collider )
+        private void InstantiateArrayCells(int i, int j, int width, int height, GameObject portals, string texturePath, bool collider)
         {
             for (int column = i; column < width; column++)
             {
@@ -141,35 +152,36 @@ namespace TheDarkPath
             }
         }
 
-        void CheckDoor(int x,int y, Room.RoomPosition typeRoom)
+        void CheckDoor(int x, int y, Room.RoomPosition typeRoom)
         {
             GameObject neightboorRoomIndex;
             Func<bool> condition;
             int portalIndex;
+            Vector2Int offset;
 
             switch (typeRoom)
             {
                 case Room.RoomPosition.East:
                     condition = () => x + 1 < GRID_SIZE.x;
-                    neightboorRoomIndex = rooms[x + 1, y];
+                    offset = new Vector2Int(1, 0);
                     portalIndex = 2;
                     break;
 
                 case Room.RoomPosition.North:
                     condition = () => y + 1 < GRID_SIZE.y;
-                    neightboorRoomIndex = rooms[x, y + 1];
+                    offset = new Vector2Int(0, 1);
                     portalIndex = 0;
                     break;
 
                 case Room.RoomPosition.South:
                     condition = () => y - 1 >= 0;
-                    neightboorRoomIndex = rooms[x, y - 1];
+                    offset = new Vector2Int(0, -1);
                     portalIndex = 1;
                     break;
 
                 case Room.RoomPosition.West:
                     condition = () => x - 1 >= 0;
-                    neightboorRoomIndex = rooms[x - 1, y];
+                    offset = new Vector2Int(-1, 0);
                     portalIndex = 3;
                     break;
                 default:
@@ -179,7 +191,7 @@ namespace TheDarkPath
 
             Room room = rooms[x, y].GetComponent<Room>();
 
-            if (condition() && neightboorRoomIndex != null)
+            if (condition() && ((neightboorRoomIndex = rooms[x + offset.x, y + offset.y]) != null))
             {
                 room.TypeRoom |= (int)typeRoom;
                 room.portalPoints[portalIndex].linkedRoom = neightboorRoomIndex;
