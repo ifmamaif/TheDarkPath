@@ -49,6 +49,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -135,4 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 20
   speed: 1
-  parentTransform: {fileID: 0}
+  ownerTransform: {fileID: 0}
+  unit: {fileID: 0}
+  targetProvider: {fileID: 0}
+  damage: 0

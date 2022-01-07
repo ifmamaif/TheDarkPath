@@ -18,6 +18,8 @@ namespace TheDarkPath
         private GameObject WeaponArm;
         [SerializeField]
         private TargetProvider targetProvider;
+        private PlayerSFX playerSFX;
+
 
         // Start is called before the first frame update
         void Start()
@@ -28,6 +30,7 @@ namespace TheDarkPath
             if (targetProvider == null)
                 Debug.LogError("targetProvider is null");
 
+            playerSFX = gameObject.GetComponent<PlayerSFX>();
 
 
             RegisterEvent(EventSystem.EventType.Shoot, () => { Shoot(); });
@@ -59,16 +62,13 @@ namespace TheDarkPath
             }
             // create bullet and let if fly
             cooldown.RestoreCooldown(currentWeapon.GetRateOfFire());
-            if (WeaponArm != null)
+            Transform sourceShoot = WeaponArm != null ? WeaponArm.transform : transform;
+            currentWeapon.Shoot(sourceShoot, this.gameObject, targetProvider);
+
+            if (playerSFX != null)
             {
-                currentWeapon.Shoot(WeaponArm.transform, this.gameObject, targetProvider);
-            }
-            else
-            {
-                currentWeapon.Shoot(transform, this.gameObject, targetProvider);
+                playerSFX.playShoot();
             }
         }
-
-
     }
 }
