@@ -42,7 +42,7 @@ namespace TheDarkPath
         public void OnRoomEnter()
         {
             int enemiesToSpawn = 0;
-            int spawnsMultiplier = Random.Range(2, 5);
+            int spawnsMultiplier = Random.Range(1, 3);
             foreach (PortalPoint point in portalPoints)
             {
                 if (point.gameObject.activeSelf)
