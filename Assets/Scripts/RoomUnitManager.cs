@@ -34,7 +34,7 @@ namespace TheDarkPath
         public void SpawnEnemies(int count, int multiplier = 1)
         {
             List<GameObject> enemySpawns = scriptRoom.EnemySpawnPoints;
-            Transform playerTransform = sceneController.playerTransform; ;
+            Transform playerTransform = sceneController.PlayerTransform; ;
 
             for (int i = multiplier; i > 0; i--)
             {
