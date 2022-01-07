@@ -87,6 +87,7 @@ namespace TheDarkPath
             if (collider)
             {
                 cell.AddComponent<BoxCollider2D>();
+                cell.tag = "Wall";
             }
         }
 

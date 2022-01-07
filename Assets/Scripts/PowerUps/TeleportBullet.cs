@@ -5,13 +5,24 @@ namespace TheDarkPath
     {
         protected override void OnExpire()
         {
-            unit.transform.position = this.transform.position;
+            TeleportPlayer();
             base.OnExpire();
         }
+
         protected override void OnTargetHit()
         {
-            unit.transform.position = this.transform.position;
+            TeleportPlayer();
             Destroy(this.gameObject);
+        }
+
+        protected override void IHitSomething()
+        {
+            TeleportPlayer();
+        }
+
+        private void TeleportPlayer()
+        {
+            unit.transform.position = this.transform.position;
         }
     }
 }

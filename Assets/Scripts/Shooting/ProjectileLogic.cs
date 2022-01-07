@@ -27,6 +27,8 @@ namespace TheDarkPath
         private string ownerTag;
         private int frameNr = 0;
 
+        protected virtual void IHitSomething() { }
+
         // Start is called before the first frame update
         void Start()
         {
@@ -65,7 +67,7 @@ namespace TheDarkPath
                 other.GetComponent<HealthObserver>().NotifyDamage(1);
                 Destroy(this.gameObject);
             }
-            // TODO: Rewrite this to be more OOP / not dependant on the bullet
+            // TODO: Rewrite this to be more OOP / not dependant on the bullet            
             if (other.tag == "Enemy" && ownerTag == "Player")
             {
                 EnemyHealthController healthController = other.GetComponent<EnemyHealthController>();
@@ -75,6 +77,13 @@ namespace TheDarkPath
                 }
                 Destroy(this.gameObject);
             }
+            
+            if (other.tag == "Wall")
+            {
+                IHitSomething();
+                Destroy(this.gameObject);
+            }
+
         }
 
         protected virtual void OnExpire()
