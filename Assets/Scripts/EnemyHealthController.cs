@@ -6,6 +6,7 @@ namespace TheDarkPath
 {
 
     // Expand on this for other enemies that have special behaviours
+    [RequireComponent(typeof(EnemySFX))]
     public class EnemyHealthController : MonoBehaviour
     {
         [SerializeField]
@@ -21,6 +22,7 @@ namespace TheDarkPath
 
         public void NotifyDamage(float damageAmount)
         {
+            gameObject.GetComponent<EnemySFX>().playHurt();
             healthAmount -= damageAmount;
             if (healthAmount <= 0f)
             {
