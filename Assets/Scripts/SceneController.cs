@@ -24,6 +24,7 @@ namespace TheDarkPath
         {
             if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name == GAMEPLAY_SCENE)
             {
+                ScoreScript.scoreValue = 0;
                 SceneManager.LoadScene(MAIN_MENU_SCENE);
             }
         }
@@ -42,6 +43,7 @@ namespace TheDarkPath
         // Used in GameOver Scened, called by MainMenuButton
         public void LoadMainMenuScene()
         {
+            ScoreScript.scoreValue = 0;
             SceneManager.LoadScene(MAIN_MENU_SCENE);
         }
 

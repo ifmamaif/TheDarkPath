@@ -30,6 +30,11 @@ namespace TheDarkPath
         {
             if (Input.GetKeyDown(KeyCode.R) || RemainingRoomsScript.remainingRoomsValue == 0)
             {
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    ScoreScript.scoreValue = 0;
+                    LevelScript.levelValue = 1;
+                }
                 if (RemainingRoomsScript.remainingRoomsValue == 0)
                 {
                     LevelScript.levelValue += 1;
