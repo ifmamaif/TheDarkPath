@@ -17,6 +17,7 @@ namespace TheDarkPath
 
         private void OnDeath()
         {
+            ScoreScript.scoreValue += 5;
             Destroy(this.gameObject);
         }
 
