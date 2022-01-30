@@ -23,17 +23,30 @@ namespace TheDarkPath
             parentRooms = UnityWrapper.InstantiateGameObject(NAME_PARENT_ROOMS);
             mainRoomIndex = GRID_SIZE / 2;       // IMPORTANT : mainRoomIndex must be half of gridSize
             Generate();
+            LevelScript.levelValue = 1;
         }
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.R) || RemainingRoomsScript.remainingRoomsValue == 0)
             {
+                if (RemainingRoomsScript.remainingRoomsValue == 0)
+                {
+                    LevelScript.levelValue += 1;
+                }
                 foreach (var room in rooms)
                 {
                     if (room)
                     {
                         Destroy(room);
+                    }
+                }
+                GameObject[] enemyObjects = GameObject.FindGameObjectsWithTag("Enemy");
+                foreach (var enemyObject in enemyObjects)
+                {
+                    if (enemyObject)
+                    {
+                        Destroy(enemyObject);
                     }
                 }
                 Generate();
@@ -42,7 +55,7 @@ namespace TheDarkPath
 
         public void Generate()
         {
-
+            int totalRooms = 0;
             rooms = UnityWrapper.InstantiateGameObject(GRID_SIZE.x, GRID_SIZE.y);
             int[,] terrain = null;
 
@@ -60,10 +73,14 @@ namespace TheDarkPath
                         if (terrain[i, j] != 0)
                         {
                             InstantiateNewRoom(new Vector2Int(i, j), false);
+                            totalRooms++;
                         }
                     }
                 }
             }, "InstantiateRooms");
+
+            RemainingRoomsScript.allRoomsValue = totalRooms - 1;
+            RemainingRoomsScript.remainingRoomsValue = totalRooms - 1;
 
             SetRoomDoors();
 

@@ -65,11 +65,33 @@ namespace TheDarkPath
         public void RoomDefeated()
         {
             IsDefeated = true;
+            RemainingRoomsScript.remainingRoomsValue -= 1;
             foreach (PortalPoint point in portalPoints)
             {
                 if (point.linkedRoom != null)
                 {
                     point.gameObject.SetActive(true);
+                    if (point.linkedRoom.gameObject.GetComponent<Room>().IsDefeated)
+                    {
+                        var childIndex = 0;
+                        switch (point.position)
+                        {
+                            case PortalPoint.Position.North:
+                                childIndex = 3;
+                                break;
+                            case PortalPoint.Position.South:
+                                childIndex = 2;
+                                break;
+                            case PortalPoint.Position.East:
+                                childIndex = 5;
+                                break;
+                            case PortalPoint.Position.West:
+                                childIndex = 4;
+                                break;
+                        }
+                        point.gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+                        point.linkedRoom.gameObject.transform.GetChild(childIndex).gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+                    }
                 }
             }
         }
@@ -77,7 +99,6 @@ namespace TheDarkPath
         public void ConstructRoom()
         {
             var dynamicRoom = this.gameObject;
-
 
             var playerSpawn = new GameObject("PlayerSpawn");
             playerSpawn.transform.parent = dynamicRoom.transform;

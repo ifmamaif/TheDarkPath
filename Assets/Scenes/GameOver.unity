@@ -155,10 +155,10 @@ RectTransform:
   m_Father: {fileID: 1872826992}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.3923002, y: 0.7250131}
-  m_AnchorMax: {x: 0.61, y: 0.86}
-  m_AnchoredPosition: {x: 7.4853973, y: 0}
-  m_SizeDelta: {x: 17.3332, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000025749, y: 105}
+  m_SizeDelta: {x: 225, y: 71}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &336215492
 MonoBehaviour:
@@ -780,8 +780,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eabfd41ab8fffd2469cf6b13d3cc6b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: GameOver
-  playerTransform: {fileID: 0}
 --- !u!4 &1851529867
 Transform:
   m_ObjectHideFlags: 0
@@ -846,7 +844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 2.5
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
