@@ -3,6 +3,7 @@
 namespace TheDarkPath
 {
     // TODO: Add heal and death
+    [RequireComponent(typeof(PlayerSFX))]
     public class HealthObserver : EventBehaviour
     {
         [SerializeField] private int initialHealth = 0;
@@ -20,6 +21,7 @@ namespace TheDarkPath
 
         public void NotifyDamage(int damageAmount)
         {
+            gameObject.GetComponent<PlayerSFX>().playHurt();
             healthSystem.Damage(damageAmount);
             healthVisual.RefreshAllHearts();
             if (healthSystem.IsDead())

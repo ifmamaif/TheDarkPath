@@ -19,6 +19,7 @@ namespace TheDarkPath
         [SerializeField]
         private TargetProvider targetProvider;
         private PlayerSFX playerSFX;
+        private EnemySFX enemySFX;
 
 
         // Start is called before the first frame update
@@ -31,7 +32,7 @@ namespace TheDarkPath
                 Debug.LogError("targetProvider is null");
 
             playerSFX = gameObject.GetComponent<PlayerSFX>();
-
+            enemySFX = gameObject.GetComponent<EnemySFX>();
 
             RegisterEvent(EventSystem.EventType.Shoot, () => { Shoot(); });
 
@@ -68,6 +69,11 @@ namespace TheDarkPath
             if (playerSFX != null)
             {
                 playerSFX.playShoot();
+            }
+
+            if (enemySFX != null)
+            {
+                enemySFX.playShoot();
             }
         }
     }

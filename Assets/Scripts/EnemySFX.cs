@@ -2,20 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerSFX : MonoBehaviour
+public class EnemySFX : MonoBehaviour
 {
-    public AudioSource rollSFX;
+    public AudioSource hoverSFX;
     public AudioSource hurtSFX;
     public AudioSource shootSFX;
 
-    public void playRoll()
+    public void playHover()
     {
-        rollSFX.Play();
-    }
-
-    public void stopRoll()
-    {
-        rollSFX.Stop();
+        hoverSFX.Play();
     }
 
     public void playHurt()
