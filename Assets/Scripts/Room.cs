@@ -43,6 +43,7 @@ namespace TheDarkPath
         {
             int enemiesToSpawn = 0;
             int spawnsMultiplier = Random.Range(1, 3);
+
             foreach (PortalPoint point in portalPoints)
             {
                 if (point.gameObject.activeSelf)
@@ -59,6 +60,10 @@ namespace TheDarkPath
                 {
                     portal.gameObject.SetActive(false);
                 }
+
+                GameObject pf=GameObject.Find("Pathfinding");
+                pf.transform.position=this.gameObject.transform.position+new Vector3(15.5f,15.5f,0);
+                pf.GetComponent<Grid>().CreazaGrid();
             }
         }
 
@@ -112,6 +117,8 @@ namespace TheDarkPath
             CreatePortal(PortalPoint.Position.East, dynamicRoom.transform);
             CreatePortal(PortalPoint.Position.West, dynamicRoom.transform);
 
+            CreateObstacles(dynamicRoom.transform);
+
             var spawn1 = new GameObject("Enemy spawn 1");
             spawn1.transform.parent = dynamicRoom.transform;
             spawn1.transform.localPosition = new Vector3(4, 2, 0);
@@ -119,6 +126,28 @@ namespace TheDarkPath
             {
                 spawn1
             };
+        }
+
+        private void CreateObstacles(Transform parent)
+        {
+            int obstaclesToSpawn = 30;
+            for(int i=0;i<obstaclesToSpawn;i++){
+                
+                 var gameObject = new GameObject("obstacol");
+                gameObject.transform.parent = parent;
+                gameObject.transform.localScale = new Vector3(Constant.TEXTURE_SIZE_X, Constant.TEXTURE_SIZE_Y, 1);
+                gameObject.transform.localPosition = new Vector3(Random.Range(6,24),Random.Range(6,24),-1);
+
+                var boxCollider2D = gameObject.AddComponent<BoxCollider2D>();
+                boxCollider2D.isTrigger = false;
+
+                var spriteRenderer = gameObject.AddComponent<SpriteRenderer>();
+                spriteRenderer.sprite = Resources.Load<Sprite>(Constant.OBSTACLE_TEXTURE_PATH);
+                spriteRenderer.color = new Color(1, 92 / 255f, 1, 1);
+                gameObject.layer=8;
+                gameObject.tag="Wall";
+                
+            }
         }
 
         private GameObject CreatePortal(PortalPoint.Position position, Transform parent)

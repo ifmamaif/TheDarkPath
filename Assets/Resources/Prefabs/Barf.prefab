@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2386827021882117040}
   - component: {fileID: -4967648501902111116}
   - component: {fileID: -1479665687434776117}
+  - component: {fileID: -5181323074310351412}
   m_Layer: 0
   m_Name: Barf
   m_TagString: Enemy
@@ -150,3 +151,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.39, y: 9.61}
   m_EdgeRadius: 0
+--- !u!114 &-5181323074310351412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4242219311020476413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4616c1829cd671a4db54fd6a474f1a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSFX: {fileID: 0}
+  hurtSFX: {fileID: 0}
+  shootSFX: {fileID: 0}

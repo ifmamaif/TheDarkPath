@@ -34,7 +34,7 @@ namespace TheDarkPath
         public void SpawnEnemies(int count, int multiplier = 1)
         {
             List<GameObject> enemySpawns = scriptRoom.EnemySpawnPoints;
-            Transform playerTransform = sceneController.PlayerTransform; ;
+            Transform playerTransform = sceneController.PlayerTransform;
 
             for (int i = multiplier; i > 0; i--)
             {
@@ -48,7 +48,9 @@ namespace TheDarkPath
                     // TODO: Maybe add dynamic spawn positions?
                     enemy.transform.position = enemySpawns[spawnPosition].transform.position;
                     enemy.SetActive(true);
-                    enemy.GetComponent<Follower>().target = playerTransform;
+                    //enemy.GetComponent<Follower>().target = playerTransform;
+                    enemy.GetComponent<Unit>().target = playerTransform;
+                    enemy.GetComponent<Unit>().speed = Random.Range(1,3);
                     enemy.GetComponent<SimpleTargetProvider>().targetTransform = playerTransform;
                 }
             }

@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 5422308941796788972}
   - component: {fileID: -2979997944011769886}
   - component: {fileID: 7778836667574993549}
+  - component: {fileID: -8284701946475117387}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -236,7 +237,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -254,9 +255,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc888e40f4012545908ad81a8fdf681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 1
-  clearance: 1
 --- !u!114 &5422308941796788950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,6 +384,21 @@ MonoBehaviour:
   hoverSFX: {fileID: 2819016018545142596}
   hurtSFX: {fileID: 1541900240360892520}
   shootSFX: {fileID: 8876277437081330276}
+--- !u!114 &-8284701946475117387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5422308941796788949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3fe4858a21f7844b8e46bb5be46f164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 20
+  clearance: 4
 --- !u!1 &7254232413658680987
 GameObject:
   m_ObjectHideFlags: 0
