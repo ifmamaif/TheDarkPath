@@ -28,6 +28,15 @@ namespace TheDarkPath
             GetMovement();
             var dir = Vector2.ClampMagnitude(new Vector2(horz, vert), 1f);
             rb.velocity = speed * dir;
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                speed = 15.0f;
+                gameObject.transform.GetChild(2).GetComponent<AudioSource>().pitch = 1.25f;
+            } else
+            {
+                speed = 10.0f;
+                gameObject.transform.GetChild(2).GetComponent<AudioSource>().pitch = 1f;
+            }
             if (horz != 0 || vert != 0)
             {
                 if (!isRolling)

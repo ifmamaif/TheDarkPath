@@ -61,7 +61,7 @@ namespace TheDarkPath
 
             // Place and Size 
             heartGameObject.GetComponent<RectTransform>().anchoredPosition = anchoredPosition;
-            heartGameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(30, 30);
+            heartGameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(60, 60);
 
             // Set Sprite
             Image heartImageUI = heartGameObject.GetComponent<Image>();

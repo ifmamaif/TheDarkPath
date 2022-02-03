@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4682815704522965407}
   - component: {fileID: 2386827021882117040}
   - component: {fileID: -4967648501902111116}
+  - component: {fileID: -1479665687434776117}
   m_Layer: 0
   m_Name: Barf
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,6 +49,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -121,6 +123,7 @@ MonoBehaviour:
   ownerTransform: {fileID: 0}
   unit: {fileID: 0}
   targetProvider: {fileID: 0}
+  damage: 0
 --- !u!61 &-1479665687434776117
 BoxCollider2D:
   m_ObjectHideFlags: 0

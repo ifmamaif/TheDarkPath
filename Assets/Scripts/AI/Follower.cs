@@ -6,6 +6,7 @@ namespace TheDarkPath
 {
 
     [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(EnemySFX))]
     public class Follower : MonoBehaviour
     {
         public Transform target;
@@ -17,6 +18,7 @@ namespace TheDarkPath
         void Start()
         {
             rb = GetComponent<Rigidbody2D>();
+            gameObject.GetComponent<EnemySFX>().playHover();
         }
 
         void FixedUpdate()
