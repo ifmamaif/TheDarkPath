@@ -21,19 +21,17 @@ namespace TheDarkPath
                 Debug.LogError("There are multiple instance of inventory");
             }
 
-
             if (InventoryUI == null)
             {
-                Debug.LogError("InventoryUI member is null");
+                //Debug.LogError("InventoryUI member is null");
             }
 
             if (itemsParent == null)
             {
-                Debug.LogError("itemsParent member is null");
+                //Debug.LogError("itemsParent member is null");
             }
 
-            inventorySlots = itemsParent.GetComponentsInChildren<InventorySlot>();
-
+            //inventorySlots = itemsParent.GetComponentsInChildren<InventorySlot>();
 
             instance = this;
         }
@@ -41,10 +39,10 @@ namespace TheDarkPath
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown("i"))
-            {
-                InventoryUI.SetActive(!InventoryUI.activeSelf);
-            }
+            //if (Input.GetKeyDown("i"))
+            //{
+            //    InventoryUI.SetActive(!InventoryUI.activeSelf);
+            //}
             if (Input.GetKey("e"))
             {
                 pickUpItem = true;

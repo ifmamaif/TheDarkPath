@@ -341,7 +341,7 @@ namespace TheDarkPath
 
             Room room = rooms[x, y].GetComponent<Room>();
 
-            if (condition() && ((neightboorRoomIndex = rooms[x + offset.x, y + offset.y]) != null))
+            if (condition() && ((neightboorRoomIndex = rooms[x + offset.x, y + offset.y]) != null && neightboorRoomIndex.activeSelf == true))
             {
                 room.TypeRoom |= (int)typeRoom;
                 room.portalPoints[portalIndex].linkedRoom = neightboorRoomIndex;
