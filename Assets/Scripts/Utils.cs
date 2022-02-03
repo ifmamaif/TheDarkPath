@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -25,5 +25,10 @@ public static class Utils
         long milliseconds = stopwatch.ElapsedMilliseconds;
         UnityEngine.Debug.Log(nameFunc + " time: " + milliseconds + " ms");
         return rezult;
+    }
+
+    public static float Lerp(float a0, float a1, float weight)
+    {
+        return a0 + weight * (a1 - a0);
     }
 }

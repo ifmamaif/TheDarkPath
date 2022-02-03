@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace PerlinNoise
 {
     public static partial class PerlinNoise
@@ -115,6 +117,26 @@ namespace PerlinNoise
                   li = PerlinNoiseUtils.LinearInterpolation(gradientA, gradientB, bc);
 
             return li;
+        }
+
+        public static float[,] PerlinNoiseImproved(int width, int height)
+        {
+            const int perlinScale = 1;
+            float perlinOffsetX = 0f;
+            float perlinOffsetY = 0f;
+
+            float[,] noiseMap = new float[width, height];
+            for (int y = 0; y < height; y++)
+            {
+                for (int x = 0; x < width; x++)
+                {
+                    float xCoord = (float)x / width * perlinScale + perlinOffsetX;
+                    float yCoord = (float)y / height * perlinScale + perlinOffsetY;
+                    noiseMap[x, y] = PerlinNoiseImproved(xCoord, yCoord);
+                }
+            }
+
+            return noiseMap;
         }
     }
 }

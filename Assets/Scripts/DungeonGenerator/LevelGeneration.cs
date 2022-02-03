@@ -17,6 +17,8 @@ namespace TheDarkPath
         private readonly Vector2Int GRID_SIZE = new Vector2Int(14, 14);
 
         private const string NAME_PARENT_ROOMS = "Rooms";
+        const int WIDTH_ROOM = 31;
+        const int HEIGHT_ROOM = 32;
 
         public void Start()
         {
@@ -61,13 +63,31 @@ namespace TheDarkPath
         public void Generate()
         {
             int totalRooms = 0;
-            rooms = UnityWrapper.InstantiateGameObject(GRID_SIZE.x, GRID_SIZE.y);
             int[,] terrain = null;
+
+            var task = Task.Run(() => {
+                Utils.MessureTime(() =>
+                {
+                    terrain = DUNGEON_GENERATOR.GenerateDungeon(GRID_SIZE, mainRoomIndex);
+                }, "Dungeon generator");
+            });
 
             Utils.MessureTime(() =>
             {
-                terrain = DUNGEON_GENERATOR.GenerateDungeon(GRID_SIZE, mainRoomIndex);
-            }, "Dungeon generator");
+                InstantiateRootRooms();
+
+                }, "Instantiate root rooms");
+
+            task.Wait();
+
+            Color[,][,] colors = null;
+            task = Task.Run(() =>
+            {
+                Utils.MessureTime(() =>
+                {
+                    colors = GenerateColors(ref terrain);
+                }, "Color generator");
+            });
 
             Utils.MessureTime(() =>
             {
@@ -77,7 +97,8 @@ namespace TheDarkPath
                     {
                         if (terrain[i, j] != 0)
                         {
-                            InstantiateNewRoom(new Vector2Int(i, j), false);
+                            var room = rooms[i, j].gameObject;
+                            InstantiateNewRoomDetails(room, false);
                             totalRooms++;
                         }
                     }
@@ -89,6 +110,10 @@ namespace TheDarkPath
 
             SetRoomDoors();
 
+            task.Wait();
+
+            ColoringRooms(terrain, colors);
+
             GameObject mainRoom = rooms[mainRoomIndex.x, mainRoomIndex.y];
             mainRoom.SetActive(true);
 
@@ -96,6 +121,30 @@ namespace TheDarkPath
             room.IsDefeated = true;
 
             GameObject.Find("Scene Controller").GetComponent<SceneController>().TeleportPlayer(room.PlayerSpawn);
+        }
+
+        private void ColoringRooms(int[,] terrain, Color[,][,] colors)
+        {
+            for (int i = 0; i < GRID_SIZE.x; i++)
+            {
+                for (int j = 0; j < GRID_SIZE.y; j++)
+                {
+                    if (terrain[i, j] != 0)
+                    {
+                        var cells = rooms[i, j].transform.Find("Cells");
+
+                        for (int x = 0; x < WIDTH_ROOM; x++)
+                        {
+                            for (int y = 0; y < HEIGHT_ROOM; y++)
+                            {
+                                var cell = cells.transform.Find(x + " " + y);
+                                var renderer = cell.GetComponent<SpriteRenderer>();
+                                renderer.color = colors[i,j][x,y];
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private void InstantiateCell(int i, int j, GameObject parent, string texture, bool collider = false)
@@ -113,24 +162,102 @@ namespace TheDarkPath
             }
         }
 
-        private void InstantiateNewRoom(Vector2Int matrixPosition, bool defeated)
+        private Color[,][,] GenerateColors(ref int[,] terrain)
         {
-            GameObject dynamicRoom = UnityWrapper.InstantiateGameObject("Room " + matrixPosition.x + " " + matrixPosition.y);
-            dynamicRoom.transform.parent = parentRooms.transform;
-            dynamicRoom.transform.position = new Vector3(HARD_CODED.x * matrixPosition.x, HARD_CODED.y * matrixPosition.y, 1);
+            float[,] entireMapNoise = PerlinNoise.PerlinNoise.PerlinNoiseImproved(WIDTH_ROOM * GRID_SIZE.x, HEIGHT_ROOM * GRID_SIZE.y);
+            float[,] whichRGBNoise = PerlinNoise.PerlinNoise.PerlinNoiseImproved(GRID_SIZE.x, GRID_SIZE.y);
+
+
+            Color[,][,] result = new Color[GRID_SIZE.x, GRID_SIZE.y][,];
+            const float MIN_VALUE = 0.01f;
+            const float MAX_VALUE = 0.98f;
+
+            for (int i = 0; i < GRID_SIZE.x; i++)
+            {
+                for (int j = 0; j < GRID_SIZE.y; j++)
+                {
+                    if (terrain[i, j] != 0)
+                    {
+                        result[i, j] = new Color[WIDTH_ROOM, HEIGHT_ROOM];
+
+                        for (int x = 0; x < WIDTH_ROOM; x++)
+                        {
+                            for (int y = 0; y < HEIGHT_ROOM; y++)
+                            {
+                                var valueNoise = entireMapNoise[x + GRID_SIZE.x * i, y + GRID_SIZE.y * j];
+
+                                Color color;
+                                if (whichRGBNoise[i, j] < 0.16f)
+                                {
+                                    color = new Color(MAX_VALUE, MIN_VALUE, MIN_VALUE);
+                                    color.g = Utils.Lerp(MIN_VALUE, MAX_VALUE, valueNoise);
+                                }
+                                else if(whichRGBNoise[i, j] < 0.32f)
+                                {
+                                    color = new Color(MAX_VALUE, MAX_VALUE, MIN_VALUE);
+                                    color.r = Utils.Lerp(MAX_VALUE, MIN_VALUE, valueNoise);
+                                }
+                                else if (whichRGBNoise[i, j] < 0.48f)
+                                {
+                                    color = new Color(MIN_VALUE, MAX_VALUE, MIN_VALUE);
+                                    color.b = Utils.Lerp(MIN_VALUE, MAX_VALUE, valueNoise);
+                                }
+                                else if (whichRGBNoise[i, j] < 0.64f)
+                                {
+                                    color = new Color(MIN_VALUE, MAX_VALUE, MAX_VALUE);
+                                    color.g = Utils.Lerp(MAX_VALUE, MIN_VALUE, valueNoise);
+                                }
+                                else if (whichRGBNoise[i, j] < 0.80f)
+                                {
+                                    color = new Color(MIN_VALUE, MIN_VALUE, MAX_VALUE);
+                                    color.r = Utils.Lerp(MIN_VALUE, MAX_VALUE, valueNoise);
+                                }
+                                else
+                                {
+                                    color = new Color(MAX_VALUE, MIN_VALUE, MAX_VALUE);
+                                    color.b = Utils.Lerp(MAX_VALUE, MIN_VALUE, valueNoise);
+                                }
+                                
+
+                                result[i, j][x, y] = color;
+                            }
+                        }
+                    }
+                }
+            }
+            return result;
+        }
+
+        private void InstantiateRootRooms()
+        {
+            rooms = UnityWrapper.InstantiateGameObject(GRID_SIZE.x, GRID_SIZE.y);
+
+            for (int i = 0; i < GRID_SIZE.x; i++)
+            {
+                for (int j = 0; j < GRID_SIZE.y; j++)
+                {
+                    GameObject dynamicRoom = UnityWrapper.InstantiateGameObject("Room " + i + " " + j);
+                    dynamicRoom.transform.parent = parentRooms.transform;
+                    dynamicRoom.transform.position = new Vector3(HARD_CODED.x * i, HARD_CODED.y * j, 1);
+                    dynamicRoom.SetActive(false);
+                    rooms[i, j] = dynamicRoom;
+                }
+            }
+        }
+
+        private void InstantiateNewRoomDetails(GameObject dynamicRoom, bool defeated)
+        {
+            dynamicRoom.SetActive(true);
 
             GameObject portals = UnityWrapper.InstantiateGameObject("Cells");
             portals.transform.parent = dynamicRoom.transform;
             portals.transform.localPosition = Vector3.zero;
 
-            const int WIDTH = 31;
-            const int HEIGHT = 32;
-
-            InstantiateArrayCells(1        , 1         , WIDTH - 1, HEIGHT - 1, portals, Constant.TERAIN_TEXTURE_PATH, false);    // center
-            InstantiateArrayCells(0        , 0         , WIDTH    , 1         , portals, Constant.WALL_TEXTURE_PATH  , true);     // left side
-            InstantiateArrayCells(0        , HEIGHT - 1, WIDTH    , HEIGHT    , portals, Constant.WALL_TEXTURE_PATH  , true);     // right side
-            InstantiateArrayCells(0        , 1         , 1        , HEIGHT - 1, portals, Constant.WALL_TEXTURE_PATH  , true);     // bottom side
-            InstantiateArrayCells(WIDTH - 1, 1         , WIDTH    , HEIGHT - 1, portals, Constant.WALL_TEXTURE_PATH  , true);     // top side
+            InstantiateArrayCells(1        , 1         , WIDTH_ROOM - 1, HEIGHT_ROOM - 1, portals, Constant.TERAIN_TEXTURE_PATH, false);    // center
+            InstantiateArrayCells(0        , 0         , WIDTH_ROOM    , 1         , portals, Constant.WALL_TEXTURE_PATH  , true);     // left side
+            InstantiateArrayCells(0        , HEIGHT_ROOM - 1, WIDTH_ROOM    , HEIGHT_ROOM    , portals, Constant.WALL_TEXTURE_PATH  , true);     // right side
+            InstantiateArrayCells(0        , 1         , 1        , HEIGHT_ROOM - 1, portals, Constant.WALL_TEXTURE_PATH  , true);     // bottom side
+            InstantiateArrayCells(WIDTH_ROOM - 1, 1         , WIDTH_ROOM    , HEIGHT_ROOM - 1, portals, Constant.WALL_TEXTURE_PATH  , true);     // top side
 
             var roomScript = dynamicRoom.AddComponent<Room>();
             roomScript.ConstructRoom();
@@ -142,7 +269,7 @@ namespace TheDarkPath
                 Resources.Load<GameObject>("Prefabs/Enemy")
             };
 
-            rooms[matrixPosition.x, matrixPosition.y] = dynamicRoom;
+           
         }
 
         private void InstantiateArrayCells(int i, int j, int width, int height, GameObject portals, string texturePath, bool collider)
@@ -162,7 +289,7 @@ namespace TheDarkPath
             {
                 for (int y = 0; y < GRID_SIZE.y; y++)
                 {
-                    if (rooms[x, y] == null)
+                    if (rooms[x, y] == null || rooms[x,y].activeSelf == false)
                     {
                         continue;
                     }
