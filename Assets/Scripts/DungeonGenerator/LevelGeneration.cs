@@ -36,6 +36,7 @@ namespace TheDarkPath
                 {
                     ScoreScript.scoreValue = 0;
                     LevelScript.levelValue = 1;
+                    GameObject.Find("Player").GetComponent<HealthObserver>().RestartHeal();
                 }
                 if (RemainingRoomsScript.remainingRoomsValue == 0)
                 {
