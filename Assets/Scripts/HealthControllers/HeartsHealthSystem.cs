@@ -68,6 +68,17 @@ namespace TheDarkPath
             return heartList[0].GetFragmentsAmount() == 0;
         }
 
+        public int GetAllFragments()
+        {
+            int fragments = 0;
+            for (int i = 0; i < heartList.Count; i++)
+            {
+                Heart heart = heartList[i];
+                fragments += heart.GetFragmentsAmount();
+            }
+            return fragments;
+        }
+
         // A single heart
         public class Heart
         {

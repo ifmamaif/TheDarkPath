@@ -6,7 +6,7 @@ namespace TheDarkPath
     [RequireComponent(typeof(PlayerSFX))]
     public class HealthObserver : EventBehaviour
     {
-        [SerializeField] private int initialHealth = 0;
+        [SerializeField] private int initialHealth;
         [SerializeField] private HeartsHealthVisual healthVisual;
         HeartsHealthSystem healthSystem;
 
@@ -30,9 +30,10 @@ namespace TheDarkPath
             }
         }
 
-        public void NotifyHeal(int healAmount)
+        public void RestartHeal()
         {
-            healthSystem.Heal(healAmount);
+            healthSystem.Heal((initialHealth * HeartsHealthSystem.MAX_FRAGMENT_AMOUNT) - healthSystem.GetAllFragments());
+            healthVisual.RefreshAllHearts();
         }
     }
 }
